@@ -1,0 +1,20 @@
+{
+  "name": "lavaurromain_2_02102020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./main.scss:./site.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roms1512/LavaurRomain_2_02102020.git"
+  },
+  "author": "Romain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roms1512/LavaurRomain_2_02102020/issues"
+  },
+  "homepage": "https://github.com/Roms1512/LavaurRomain_2_02102020#readme"
+}
