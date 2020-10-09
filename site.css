@@ -1,8 +1,8 @@
+@charset "UTF-8";
 body {
   font-family: Roboto;
   width: 600px;
   margin: auto;
-  border: 1px solid black;
 }
 
 a {
@@ -15,12 +15,12 @@ a {
   width: 100%;
   display: flex;
 }
-.header.logo {
+.header .logo {
   margin: auto;
+  text-align: center;
 }
-.header.fleche {
+.header .fleche {
   text-align: left;
-  border: 1px solid black;
   height: auto;
   font-size: 1.8em;
 }
@@ -94,21 +94,34 @@ a {
 }
 
 .menu {
+  position: absolute;
+  width: 580px;
+  top: 400px;
   background-color: gainsboro;
   border-radius: 70px 70px 0 0;
-  padding-left: 10px;
+  padding-left: 20px;
   padding-top: 30px;
+  margin: auto;
 }
 .menu .menu-1 {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .fa-heart {
+  font-size: 2.2em;
+  padding-right: 30px;
+}
+.menu .entré, .menu .plats, .menu .dessert {
+  padding-top: 20px;
 }
 .menu .entr-1, .menu .plt-1, .menu .dsrt-1 {
   background-color: #FFF;
   border-radius: 20px;
-  width: 94%;
-  margin-left: 10px;
+  width: 95%;
   padding-left: 10px;
   padding: -0.1px 0 -0.1px 10px;
+  cursor: pointer;
 }
 .menu button {
   height: 60px;
@@ -128,6 +141,7 @@ a {
   background-color: #f0f0f0;
   padding-top: 30px;
   padding-left: 10px;
+  padding-bottom: 30px;
 }
 .sct-1 .resto-1 {
   margin: auto;
@@ -182,6 +196,16 @@ a {
 }
 .footer p, .footer .fa-utensils, .footer .fa-hands-helping {
   color: white;
+}
+.footer .menu-footer {
+  display: flex;
+}
+
+.footer-1 {
+  position: absolute;
+  width: 590px;
+  top: 1620px;
+  padding-left: 10px;
 }
 
 /*# sourceMappingURL=site.css.map */
