@@ -74,16 +74,18 @@ a {
 .nav {
     text-align: left;
     padding-left: 10px;
+    margin-bottom: 60px;
     .fonct-1 {
         display: flex;
         flex-direction: column;
-        border: 1px solid black;
+        justify-content: space-around;
         border-radius: 20px;
         margin-bottom: 10px;
         margin-left: 40px;
         align-items: center;
         height: 60px;
         width: 500px;
+        background-color: rgb(245, 245, 245);
         &:hover{
             background-color: $color-primary;
         }
@@ -99,7 +101,40 @@ a {
 /* Menus */
 .img-1 {
     width: 600px;
+    height: auto;
 }
+
+.menu {
+    background-color: gainsboro;
+    border-radius: 70px 70px 0 0;
+    padding-left: 10px;
+    padding-top: 30px;
+    .menu-1 {
+        display: flex;
+    }
+        .entr-1, .plt-1, .dsrt-1 {
+            background-color: #FFF;
+            border-radius: 20px;
+            width: 94%;
+            margin-left: 10px;
+            padding-left: 10px;
+            padding: -0.1px 0 -0.1px 10px;
+        } 
+    & button {
+        height: 60px;
+        width: 270px;
+        margin-bottom: 70px;
+        margin-top: 30px;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        background-image: linear-gradient($color-secondary, $color-primary);
+        color: #FFF;
+        font-size: 1.2em;
+    }
+}
+
+
 
     
 /* section */

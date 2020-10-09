@@ -64,17 +64,19 @@ a {
 .nav {
   text-align: left;
   padding-left: 10px;
+  margin-bottom: 60px;
 }
 .nav .fonct-1 {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  justify-content: space-around;
   border-radius: 20px;
   margin-bottom: 10px;
   margin-left: 40px;
   align-items: center;
   height: 60px;
   width: 500px;
+  background-color: whitesmoke;
 }
 .nav .fonct-1:hover {
   background-color: #9356DC;
@@ -88,6 +90,37 @@ a {
 /* Menus */
 .img-1 {
   width: 600px;
+  height: auto;
+}
+
+.menu {
+  background-color: gainsboro;
+  border-radius: 70px 70px 0 0;
+  padding-left: 10px;
+  padding-top: 30px;
+}
+.menu .menu-1 {
+  display: flex;
+}
+.menu .entr-1, .menu .plt-1, .menu .dsrt-1 {
+  background-color: #FFF;
+  border-radius: 20px;
+  width: 94%;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding: -0.1px 0 -0.1px 10px;
+}
+.menu button {
+  height: 60px;
+  width: 270px;
+  margin-bottom: 70px;
+  margin-top: 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  color: #FFF;
+  font-size: 1.2em;
 }
 
 /* section */
