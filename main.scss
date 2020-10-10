@@ -20,9 +20,13 @@ a {
 .header{
     width: 100%;
     display: flex;
-    .logo {
-            margin: auto;
-            text-align: center;
+    
+    img {
+        height: 50px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        margin: auto;
+        
         }
     .fleche {
         text-align: left;
@@ -31,15 +35,18 @@ a {
     }
 }
 
+
 /* acceuil */
 .acceuil {
     text-align: center;
     background-color: rgb(241, 241, 241);
+    
     .localisation {
         background-color: gainsboro;
         display: flex;
         justify-content: center;  
         align-items: center;
+        box-shadow: 0px -0.9px 3px 0px;
         p {
             font-size: 1.2em;
         } 
@@ -75,28 +82,43 @@ a {
     .fonct-1 {
         display: flex;
         flex-direction: column;
-        border-radius: 20px;
+        border-radius: 25px;
         box-shadow: 0px 1px 10px 0px;
         margin-bottom: 20px;
         margin-left: 40px;
         align-items: center;
-        height: 60px;
         width: 500px;
-        
+        height: 80px;
+        font-size: 1.3em;
         background-color: rgb(245, 245, 245);
         &:hover{
-            background-color: $color-primary;
+            background-color: #9256dc50;
         }
 
-        & a {
-            border: 1px solid black;
+        & a{
             display: flex;
             align-items: center;
             margin: auto;
             i {
-                padding-right: 10px;
-            }
-        }
+                padding-right: 80px;
+                font-size: 1.2em;
+            }     
+        }  
+    }
+    .n° {
+        position: absolute;
+        margin-left: 15px;
+        border-radius: 30px; 
+        background-color: $color-primary;
+        font-size: 1.3em;
+        height: 30px;
+        width: 30px;
+        padding: 10px 0px 5px 18px;
+        color: #FFF;
+    }
+    .fonct{
+        display: flex;
+        
     }
 }
 
@@ -169,11 +191,13 @@ a {
 .sct-1 {
     background-color: rgb(240, 240, 240);
     padding-top: 30px;
-    padding-left: 10px;
     padding-bottom: 30px;
+    h1 {
+        padding-left: 20px;
+    }
     .resto-1 {
         margin: auto;
-        width: 88%;
+        width: 90%;
         box-shadow: 0px 1px 10px 0px;
         border-radius: 30px;
         overflow: hidden;
@@ -182,36 +206,38 @@ a {
         background-color: #FFF;
         .img-1 {
             width: 100%;
-            height: 350px;
+            height: 300px;
             image-rendering: pixelated;
         }
         .txt-1 {
-            display: flex;
-            flex-direction: column;
+            height: auto;
             padding-left: 10px;
-            padding-bottom: -10px;
-            .fa-heart {
+            border: 1px solid black;
+            p, i {
                 display: flex;
+            }
+            .fa-heart {
                 font-size: 2.2em;
             }
-        }
-            
+        }           
         .nouveau-1, .nouveau-2{
             position: absolute;
             border: 1px solid $color-tertiaire;
             background-color: $color-tertiaire;
             color: green;
+            border-radius: 5px;
             height: 30px;
-            width: 90px;
+            width: 110px;
+            font-size: 1.1em;
             text-align: center;
             padding-top: 9px;
-            left: 610px;
+            left: 590px;
         }
         .nouveau-1 {
-            top: 880px;
+            top: 1092px;
         }
         .nouveau-2 {
-            top: 1400px;
+            top: 1575px;
         }
     }
 }
@@ -242,7 +268,7 @@ a {
             width: 10px;
         }
     }
-    p, i{
+    p, i {
             color: white;
             height: 10px;
         }    
