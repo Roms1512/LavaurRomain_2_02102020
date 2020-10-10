@@ -17,14 +17,17 @@ a {
 }
 .header img {
   height: 50px;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 20px;
   margin: auto;
 }
 .header .fleche {
   text-align: left;
-  height: auto;
+  height: 100%;
   font-size: 1.8em;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
 
 /* acceuil */
@@ -266,13 +269,16 @@ a {
 }
 .footer p, .footer i {
   color: white;
-  height: 10px;
+  height: 15px;
 }
 
 .footer-1 {
   position: absolute;
   width: 570px;
   top: 1850px;
+}
+.footer-1.--mint {
+  top: 1945px;
 }
 
 /*# sourceMappingURL=site.css.map */
