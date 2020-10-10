@@ -7,7 +7,8 @@ $color-tertiaire: #99E2D0;
 body {
     font-family: Roboto;
     width: 600px;
-    margin: auto;;
+    margin: auto;
+    background-color: rgb(216, 216, 216);
     
 }
 
@@ -20,7 +21,7 @@ a {
 .header{
     width: 100%;
     display: flex;
-    
+    background-color: #FFF;
     img {
         height: 50px;
         padding-top: 25px;
@@ -81,8 +82,12 @@ a {
 .nav {
     text-align: left;
     padding-left: 10px;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: #FFF;
+    h1 {
+        padding-left: 15px;
+    }
     .fonct-1 {
         display: flex;
         flex-direction: column;
@@ -124,7 +129,6 @@ a {
     }
     .fonct{
         display: flex;
-        margin-top: 5px;
     }
 }
 
@@ -147,6 +151,10 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        h1 {
+            font-family: Shrikhand;
+            font-size: 2em;
+        }
     }
     .fa-heart {
         font-size: 2.2em;
@@ -154,9 +162,11 @@ a {
     }
     .entré, .plats, .dessert {
         padding-top: 20px;
-        h2 {
+        .titr-1 {
+            color: rgb(102, 102, 102);
             border-bottom: 3px solid $color-tertiaire;
             width: 60px;
+            font-size: 1.45em;
         }
     }
         .entr-1, .plt-1, .dsrt-1 {
@@ -169,11 +179,12 @@ a {
             cursor: pointer; 
             h3 {
                 padding-top: 10px;
+                height: 10px;
             }
             p {
                 display: flex;
                 justify-content: space-between;
-                padding-right: 10px;
+                padding-right: 25px;
                 padding-bottom:10px;
             }          
         } 
@@ -199,6 +210,7 @@ a {
     padding-top: 25px;
     padding-bottom: 30px;
     h1 {
+        
         padding-left: 30px;
         padding-bottom: 5px;
     }
@@ -236,13 +248,13 @@ a {
             position: absolute;
             border: 1px solid $color-tertiaire;
             background-color: $color-tertiaire;
-            color: green;
+            color: rgb(0, 71, 0);
             border-radius: 3px;
             height: 30px;
             width: 110px;
-            font-size: 1.1em;
+            font-size: 1.2em;
             text-align: center;
-            padding-top: 9px;
+            padding-top: 6px;
             left: 590px;
         }
         .nouveau-1 {
@@ -288,8 +300,8 @@ a {
 .footer-1 {
     position: absolute;
     width: 570px;
-    top: 1850px; 
+    top: 1792px; 
     &.--mint {
-        top: 1945px
+        top: 1878px
     }  
 }
