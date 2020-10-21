@@ -4,6 +4,11 @@ body {
   width: 600px;
   margin: auto;
   background-color: #d8d8d8;
+  box-shadow: 0 3px 10px 0;
+}
+
+.body {
+  box-shadow: none;
 }
 
 a {
