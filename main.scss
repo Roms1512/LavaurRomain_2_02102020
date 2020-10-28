@@ -94,36 +94,7 @@ a {
         width: 100%;
         padding-left: 15px;
     }
-    
-    .fonct-1 {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        border-radius: 25px;
-        box-shadow: 0 1px 10px 0;
-        margin-bottom: 20px;
-        margin-top: 10px;
-        margin-left: 40px;
-        padding-left: 9%;
-        height: 80px;
-        font-size: 1.3em;
-        background-color: rgb(245, 245, 245);
-        &:hover{
-            background-color: #9256dc50;
-        }
-        & a{
-            display: flex;
-            align-items: center;
-            margin: auto;
-            i {
-                padding-right: 80px;
-                font-size: 1.2em;
-                color: gray;
-            }     
-        }  
-    }
-    
+
     .fonct{
         display: flex;
         position: relative;
@@ -142,7 +113,37 @@ a {
             width: 30px;
             color: #FFF;
         }
+    }   
+    .fonct-1 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        box-shadow: 0 1px 10px 0;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-left: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 80px;
+        font-size: 1.3em;
+        background-color: rgb(245, 245, 245);
+        &:hover{
+            background-color: #9256dc50;
+        }
+        & a{
+            display: flex;
+            align-items: center;
+            margin: auto;
+            i {
+                padding-right: 80px;
+                font-size: 1.2em;
+                color: gray;
+            }     
+        }  
     }
+    
 }
 
 /* restorants */
@@ -161,33 +162,33 @@ a {
     }
     // restos
     .resto-1 {
-        margin-right: 7%;
-        width: 470px;
         box-shadow: 0 1px 10px 0;
         border-radius: 30px;
         overflow: hidden;
-        padding-bottom: 20px;
-        margin-bottom: 30px;
-        background-color: #FFF;
+        width: 89.5%;
+        padding-bottom: 0;
+        margin-left: 20px;
+        margin-right: 0;
+        margin-bottom: 18px;
+        height: 251px;
         position: relative;
         .img-1 {
-            width: 100%;
-            height: 300px;  
+            height: 174px;
         }
         .nouveau-1, .nouveau-2 {
-                margin: 0;
-                position: absolute;
-                top: 13px;
-                right: 11px;
-                border-radius: 3px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: $color-tertiaire;
-                color: rgb(0, 100, 0);
-                height: 29px;
-                width: 81px;
-            }
+            margin: 0;
+            position: absolute;
+            top: 13px;
+            right: 11px;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-tertiaire;
+            color: rgb(0, 100, 0);
+            height: 29px;
+            width: 81px;
+        }
         .txt-1 {
             height: auto;
             padding-left: 10px;
@@ -206,21 +207,6 @@ a {
                 padding-bottom: 50px;
             }
         }           
-        // .nouveau-1, .nouveau-2{
-        //     border: 1px solid $color-tertiaire;
-        //     background-color: $color-tertiaire;
-        //     overflow: hidden;
-        //     color: rgb(0, 71, 0);
-        //     border-radius: 3px;
-        //     height: 30px;
-        //     width: 110px;
-        //     font-size: 1.2em;
-        //     text-align: center;
-        //     padding-top: 6px;
-        //     margin-left: 410px;
-        //     margin-top: -290px;
-        //     margin-bottom: 270px;
-        // }
     }
 }
 
@@ -229,16 +215,16 @@ a {
     background-color:rgb(53, 53, 53);
     padding-bottom: 38px;
     padding-top: 26px;
-    padding-left: 26px;
     img {   
+        padding-left: 26px;
         filter: invert(100%);
         margin-bottom: 23px;
         display: flex;
         justify-content: flex-start;       
         height: 25px;
-        padding-left: 30px;
     }   
     .menu-footer a{ 
+        padding-left: 26px;
         display: flex;
         align-items: flex-end;
         i {
@@ -248,8 +234,10 @@ a {
             height: 20px;
             margin-right: 11px;           
         }
-    }            
-    
+        &__mint {
+            padding-left: 26px;
+        }
+    }               
     p, i {   
         margin-bottom: 0;  
         margin-top: 10px;      
@@ -306,19 +294,21 @@ a {
             padding-left: 10px;
             margin-right: 12px;
             margin-left: 14px;
+            
             cursor: pointer;    
             &:hover {
                 & > .fa-check-circle {
                     transform-origin: right 50%;
-                    transition: transform 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) ;
-                    transform: scalex(1);  
+                    transition: transform 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000); 
+                    transform: scalex(1);
+                    animation-direction: rotate-center 0.6s ease-in-out both;
                 }
                 &.entr-1, &.plt-1, &.dsrt-1 {
                     padding-right: 62px;
                     transition: 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000);
                 }                    
-            } 
-            
+            }
+                    
             // animation
             .fa-check-circle {
                 color: #FFF;
@@ -332,7 +322,9 @@ a {
                 padding-right: 20px;
                 top: 0;
                 right: 0;
-                transform: scalex(0); 
+                transform: scalex(0) ;
+                background-attachment: fixed;
+            
             }
             h3 {
                 padding-top: 16px;
@@ -470,6 +462,7 @@ form {
 @media screen and (max-width: 680px){
     // logo
     .header {
+        width: 100%;
        height: 63px;
        display: flex;
        align-items: center;
@@ -516,6 +509,9 @@ form {
     }
 
     .nav {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: flex-start;
         h1 {
             font-size: 18px;
             margin-bottom: 31px;
@@ -573,10 +569,12 @@ form {
         }
         
         // restos 
-        
         .resto-1 {
-            width: 89.4%;
+            width: 89.5%;
             padding-bottom: 0;
+            margin-left: 20px;
+            margin-right: 0;
+            margin-bottom: 18px;
             height: 251px;
             position: relative;
             .img-1 {
@@ -627,9 +625,11 @@ form {
         top: 283px;
         .menu-1 {
             h1 {
+                width: 90%;
                 height: 33px;
             }
             .fa-heart {
+                width: 10%;
                 height: 21px;    
             }
         }
