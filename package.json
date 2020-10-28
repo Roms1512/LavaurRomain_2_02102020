@@ -14,7 +14,7 @@
   },
   "author": "Romain",
   "license": "ISC",
-  "browserslist" :,
+  "browserslist" :"last 1 versions",
   "bugs": {
     "url": "https://github.com/Roms1512/LavaurRomain_2_02102020/issues"
   },
