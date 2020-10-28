@@ -63,6 +63,9 @@ a {
   font-size: 1.5em;
   margin-top: 50px;
 }
+.acceuil .description br {
+  display: none;
+}
 .acceuil button {
   height: 60px;
   margin-top: 30px;
@@ -117,20 +120,24 @@ a {
   font-size: 1.2em;
   color: gray;
 }
-.nav .n° {
-  position: absolute;
-  margin-top: 27px;
-  margin-left: 15px;
-  border-radius: 30px;
-  background-color: #9356DC;
-  font-size: 1.3em;
-  height: 30px;
-  width: 30px;
-  padding: 10px 0 5px 18px;
-  color: #FFF;
-}
 .nav .fonct {
   display: flex;
+  position: relative;
+  justify-content: center;
+}
+.nav .fonct .n° {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #9356DC;
+  font-size: 15px;
+  height: 30px;
+  width: 30px;
+  color: #FFF;
 }
 
 /* restorants */
@@ -149,7 +156,7 @@ a {
   padding-bottom: 5px;
 }
 .sct-1 .resto-1 {
-  margin: auto;
+  margin-right: 7%;
   width: 470px;
   box-shadow: 0 1px 10px 0;
   border-radius: 30px;
@@ -157,11 +164,25 @@ a {
   padding-bottom: 20px;
   margin-bottom: 30px;
   background-color: #FFF;
+  position: relative;
 }
 .sct-1 .resto-1 .img-1 {
   width: 100%;
   height: 300px;
-  image-rendering: pixelated;
+}
+.sct-1 .resto-1 .nouveau-1, .sct-1 .resto-1 .nouveau-2 {
+  margin: 0;
+  position: absolute;
+  top: 13px;
+  right: 11px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  color: darkgreen;
+  height: 29px;
+  width: 81px;
 }
 .sct-1 .resto-1 .txt-1 {
   height: auto;
@@ -175,7 +196,7 @@ a {
   align-items: center;
 }
 .sct-1 .resto-1 .txt-1 h2 {
-  margin-top: 19px;
+  margin-top: 15px;
 }
 .sct-1 .resto-1 .txt-1 .fa-heart {
   font-size: 2.2em;
@@ -185,35 +206,33 @@ a {
 /* footer page d'acceuil*/
 .footer {
   background-color: #353535;
-  padding-top: 50px;
-  padding-left: 0px;
-  padding-bottom: 40px;
-  font-size: 1em;
+  padding-bottom: 38px;
+  padding-top: 26px;
+  padding-left: 26px;
 }
 .footer img {
   filter: invert(100%);
-  padding-bottom: 30px;
+  margin-bottom: 23px;
   display: flex;
   justify-content: flex-start;
   height: 25px;
   padding-left: 30px;
 }
 .footer .menu-footer a {
-  height: 20px;
   display: flex;
-  align-items: center;
-  width: 300px;
-  padding-bottom: 8px;
+  align-items: flex-end;
 }
 .footer .menu-footer a i {
-  padding-right: 0;
-  width: 0;
-  height: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  height: 20px;
+  margin-right: 11px;
 }
 .footer p, .footer i {
-  height: 10px;
-  padding-left: 30px;
-  padding-bottom: -5px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 16px;
   color: white;
 }
 
@@ -433,6 +452,9 @@ form button {
   .acceuil .description p {
     font-size: 18px;
   }
+  .acceuil .description br {
+    display: table;
+  }
   .acceuil button {
     padding-right: 22px;
     padding-left: 22px;
@@ -444,21 +466,96 @@ form button {
     font-size: 18px;
     margin-bottom: 31px;
   }
+  .nav .fonct {
+    position: relative;
+  }
+  .nav .fonct .n° {
+    position: absolute;
+    left: 20px;
+    top: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #9356DC;
+    font-size: 11px;
+    height: 25px;
+    width: 24px;
+    color: #FFF;
+  }
   .nav .fonct-1 {
     height: 73px;
     padding-left: 33px;
     padding-right: 72px;
-    margin-right: 0;
-    margin-top: 0;
+    margin-right: 20px;
+    margin-left: 32px;
   }
   .nav .fonct-1 a p {
     font-size: 13px;
+    margin: 0;
   }
   .nav .fonct-1 a .ico {
     color: gray;
-    height: 21px;
+    font-size: 21px;
     margin-right: 27px;
     padding-right: 0;
+  }
+
+  .sct-1 {
+    padding: 0;
+    padding-bottom: 34px;
+  }
+  .sct-1 h1 {
+    margin-top: 58px;
+    margin-bottom: 27px;
+    font-size: 18px;
+    padding-left: 21px;
+    padding-bottom: 0;
+  }
+  .sct-1 .resto-1 {
+    width: 89.4%;
+    padding-bottom: 0;
+    height: 251px;
+    position: relative;
+  }
+  .sct-1 .resto-1 .img-1 {
+    height: 174px;
+  }
+  .sct-1 .resto-1 .nouveau-1, .sct-1 .resto-1 .nouveau-2 {
+    margin: 0;
+    position: absolute;
+    top: 13px;
+    right: 11px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    color: darkgreen;
+    height: 29px;
+    width: 81px;
+  }
+  .sct-1 .resto-1 .txt-1 {
+    padding-left: 0;
+    height: 77px;
+  }
+  .sct-1 .resto-1 .txt-1 h2 {
+    font-size: 18px;
+    margin-bottom: 7px;
+    padding-left: 14px;
+  }
+  .sct-1 .resto-1 .txt-1 .txt {
+    padding-bottom: 20px;
+  }
+  .sct-1 .resto-1 .txt-1 .txt p {
+    padding-left: 14px;
+    font-size: 13px;
+    margin-top: 7px;
+  }
+  .sct-1 .resto-1 .txt-1 .txt i {
+    height: 21px;
+    right: 24px;
+    bottom: 33px;
   }
 
   .menu {
@@ -492,52 +589,6 @@ form button {
   }
   .footer-1.--mint {
     top: 1642px;
-  }
-
-  .sct-1 {
-    padding: 0;
-  }
-  .sct-1 h1 {
-    font-size: 18px;
-    padding-left: 21px;
-  }
-  .sct-1 .resto-1 {
-    width: 89.4%;
-    padding-bottom: 0;
-    height: 251px;
-    position: relative;
-  }
-  .sct-1 .resto-1 .img-1 {
-    height: 174px;
-  }
-  .sct-1 .resto-1 .nouveau-1, .sct-1 .resto-1 .nouveau-2 {
-    margin: 0;
-    position: absolute;
-    top: 10px;
-    background-color: #99E2D0;
-    color: green;
-  }
-  .sct-1 .resto-1 .txt-1 {
-    padding-left: 0;
-    height: 77px;
-  }
-  .sct-1 .resto-1 .txt-1 h2 {
-    font-size: 18px;
-    margin-bottom: 7px;
-    padding-left: 14px;
-  }
-  .sct-1 .resto-1 .txt-1 .txt {
-    padding-bottom: 20px;
-  }
-  .sct-1 .resto-1 .txt-1 .txt p {
-    padding-left: 14px;
-    font-size: 13px;
-    margin-top: 7px;
-  }
-  .sct-1 .resto-1 .txt-1 .txt i {
-    height: 21px;
-    right: 24px;
-    bottom: 33px;
   }
 }
 

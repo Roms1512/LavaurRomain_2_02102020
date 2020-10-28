@@ -65,6 +65,9 @@ a {
     .description{
         font-size: 1.5em;
         margin-top: 50px;
+        br {
+            display: none;
+        }
     } 
     button {
         height: 60px;
@@ -91,6 +94,7 @@ a {
         width: 100%;
         padding-left: 15px;
     }
+    
     .fonct-1 {
         display: flex;
         flex-wrap: wrap;
@@ -119,20 +123,25 @@ a {
             }     
         }  
     }
-    .n° {
-        position: absolute;
-        margin-top: 27px;
-        margin-left: 15px;
-        border-radius: 30px; 
-        background-color: $color-primary;
-        font-size: 1.3em;
-        height: 30px;
-        width: 30px;
-        padding: 10px 0 5px 18px;
-        color: #FFF;
-    }
+    
     .fonct{
         display: flex;
+        position: relative;
+        justify-content: center;
+        .n° {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px; 
+            background-color: $color-primary;
+            font-size: 15px;
+            height: 30px;
+            width: 30px;
+            color: #FFF;
+        }
     }
 }
 
@@ -152,7 +161,7 @@ a {
     }
     // restos
     .resto-1 {
-        margin: auto;
+        margin-right: 7%;
         width: 470px;
         box-shadow: 0 1px 10px 0;
         border-radius: 30px;
@@ -160,11 +169,25 @@ a {
         padding-bottom: 20px;
         margin-bottom: 30px;
         background-color: #FFF;
+        position: relative;
         .img-1 {
             width: 100%;
-            height: 300px;
-            image-rendering: pixelated;
+            height: 300px;  
         }
+        .nouveau-1, .nouveau-2 {
+                margin: 0;
+                position: absolute;
+                top: 13px;
+                right: 11px;
+                border-radius: 3px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $color-tertiaire;
+                color: rgb(0, 100, 0);
+                height: 29px;
+                width: 81px;
+            }
         .txt-1 {
             height: auto;
             padding-left: 10px;
@@ -176,7 +199,7 @@ a {
                 align-items: center;
             }
             h2 {
-                margin-top: 19px;
+                margin-top: 15px;
             }
             .fa-heart {
                 font-size: 2.2em;
@@ -204,36 +227,36 @@ a {
 /* footer page d'acceuil*/
 .footer {
     background-color:rgb(53, 53, 53);
-    padding-top: 50px;
-    padding-left: 0px; 
-    padding-bottom: 40px;
-    font-size: 1em;
+    padding-bottom: 38px;
+    padding-top: 26px;
+    padding-left: 26px;
     img {   
         filter: invert(100%);
-        padding-bottom: 30px;
+        margin-bottom: 23px;
         display: flex;
         justify-content: flex-start;       
         height: 25px;
         padding-left: 30px;
     }   
     .menu-footer a{ 
-        height: 20px; 
         display: flex;
-        align-items: center;
-        width: 300px;      
-        padding-bottom: 8px;       
+        align-items: flex-end;
         i {
-            padding-right: 0;
-            width: 0; 
-            height: 5px;
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            height: 20px;
+            margin-right: 11px;           
         }
-    }
-    p, i {         
-        height: 10px; 
-        padding-left: 30px; 
-        padding-bottom: -5px;
+    }            
+    
+    p, i {   
+        margin-bottom: 0;  
+        margin-top: 10px;      
+        font-size: 16px;
         color: white;
-    }    
+    } 
+
 }
 
 /* Menus */
@@ -437,6 +460,13 @@ form {
 }
 
 
+
+
+
+
+
+
+
 @media screen and (max-width: 680px){
     // logo
     .header {
@@ -466,13 +496,16 @@ form {
             }
         }
         .description{
+            margin-top: 43px;
             h1 {
                 font-size: 23px;
             }
             p {
                 font-size: 18px;
             }
-            margin-top: 43px;
+            br {
+                display: table;
+            }
         } 
         button {
             padding-right: 22px;
@@ -487,19 +520,38 @@ form {
             font-size: 18px;
             margin-bottom: 31px;
         }
+        .fonct {
+            position: relative;
+            .n° {
+                position: absolute;
+                left: 20px;
+                top: 26px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 30px; 
+                background-color: $color-primary;
+                font-size: 11px;
+                height: 25px;
+                width: 24px;
+                color: #FFF;
+            }
+        }
         .fonct-1 {
             height: 73px;
             padding-left: 33px;
             padding-right: 72px;
-            margin-right: 0;
-            margin-top: 0;
+            margin-right: 20px;
+            margin-left: 32px;
+            
             a {
                 p {
                     font-size: 13px;
+                    margin: 0;
                 }
                 .ico {
                     color: gray;
-                    height: 21px;
+                    font-size: 21px;
                     margin-right: 27px;
                     padding-right: 0;
                 }
@@ -507,6 +559,69 @@ form {
         }
     }
     
+    
+    // restorants
+    .sct-1 {
+        padding: 0;
+        padding-bottom: 34px;
+        h1 {
+            margin-top: 58px;
+            margin-bottom: 27px;
+            font-size: 18px;
+            padding-left: 21px;
+            padding-bottom: 0;
+        }
+        
+        // restos 
+        
+        .resto-1 {
+            width: 89.4%;
+            padding-bottom: 0;
+            height: 251px;
+            position: relative;
+            .img-1 {
+                height: 174px;
+            }
+            .nouveau-1, .nouveau-2 {
+                margin: 0;
+                position: absolute;
+                top: 13px;
+                right: 11px;
+                border-radius: 3px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $color-tertiaire;
+                color: rgb(0, 100, 0);
+                height: 29px;
+                width: 81px;
+            }
+            .txt-1 {
+                padding-left: 0;
+                height: 77px;
+                h2 {
+                    font-size: 18px;
+                    margin-bottom: 7px;
+                    padding-left: 14px;
+                }
+                .txt {
+                    padding-bottom: 20px;
+                    p {
+                        padding-left: 14px;
+                        font-size: 13px;
+                        margin-top: 7px;
+                    }
+                    i {
+                        height: 21px;
+                        right: 24px;
+                        bottom: 33px;
+                    }
+                }
+            }
+        }
+    }  
+
+    // menus
     .menu {
         position: absolute;
         top: 283px;
@@ -544,107 +659,9 @@ form {
         &.--mint {
             top: 1642px
         }  
-     
     }
-
-    // restorants
-    .sct-1 {
-        padding: 0;
-        h1 {
-            font-size: 18px;
-            padding-left: 21px;
-        }
-
-        // restos 
-
-        .resto-1 {
-            width: 89.4%;
-            padding-bottom: 0;
-            height: 251px;
-            position: relative;
-            .img-1 {
-                height: 174px;
-            }
-            .nouveau-1, .nouveau-2 {
-                margin: 0;
-                position: absolute;
-                top: 10px;
-                background-color: $color-tertiaire;
-                color: green;
-            }
-            .txt-1 {
-                padding-left: 0;
-                height: 77px;
-                h2 {
-                    font-size: 18px;
-                    margin-bottom: 7px;
-                    padding-left: 14px;
-                }
-                .txt {
-                    padding-bottom: 20px;
-                    p {
-                        padding-left: 14px;
-                        font-size: 13px;
-                        margin-top: 7px;
-                    }
-                    i {
-                        height: 21px;
-                        right: 24px;
-                        bottom: 33px;
-                    }
-                }
-            }
-        }
-    }
-
+    
+    
+    
+    
 }
-        // .resto-1 {
-        //     margin: auto;
-        //     width: 90%;
-        // }
-    
-        // .fonct-1 {
-        //     flex-direction: column;
-        //     h1 {
-        //         width: 600px;
-        //         text-align: center;
-        //     }
-        // }
-    
-        // .sct-1 {
-        //     background-color: rgb(240, 240, 240);
-        //     padding-top: 25px;
-        //     padding-bottom: 30px;
-        //     padding-bottom: 20px;
-        // }
-    
-        // .img-1 {
-        //     width: 100%;
-        //     height: auto;
-        // }
-    
-        // .menu {
-        //     position: absolute;
-        //     width: 100%;
-        //     top: 400px;
-        //     background-color: rgb(245, 245, 245);
-        //     border-radius: 70px 70px 0 0;
-        //     padding-left: 20px;
-        //     padding-top: 30px;
-        //     margin: auto;
-        // }
-        
-        // /* nav */
-        // .nav {
-        //     display: flex;
-        //     flex-wrap: wrap;
-        //     text-align: left;
-        //     justify-content: center;
-        //     padding-left: 10px;
-        //     padding-top: 50px;
-        //     padding-bottom: 60px;
-        //     background-color: #FFF;
-        //     h1 {
-        //         padding-left: 15px;
-        //     }
-        // }

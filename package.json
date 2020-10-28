@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch ./main.scss:./site.css",
-    "prefix": "postcss ./site.css --use autoprefixer -d"
+    "prefix": "postcss ./site.css --use autoprefixer -d ./prefixed/"
   },
   "repository": {
     "type": "git",
@@ -14,6 +14,7 @@
   },
   "author": "Romain",
   "license": "ISC",
+  "browserslist" :,
   "bugs": {
     "url": "https://github.com/Roms1512/LavaurRomain_2_02102020/issues"
   },
