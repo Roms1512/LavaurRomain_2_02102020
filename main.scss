@@ -7,6 +7,7 @@ body {
     font-family: Roboto;
     width: 100%;
     margin: auto;
+    position: relative;
 }
 
 img {
@@ -18,13 +19,13 @@ a {
     color: black;
 }
 
-/* header */
+/* logo */
 .header{
     width: 100%;
     display: flex;
     background-color: #FFF;
     img {
-        height: 50px;
+        height: auto;
         padding-top: 25px;
         padding-bottom: 20px;
         margin: auto;
@@ -42,6 +43,7 @@ a {
 
 /* acceuil */
 .acceuil {
+    width: 100%;
     text-align: center;
     background-color: rgb(241, 241, 241);
     .localisation {
@@ -78,11 +80,12 @@ a {
         font-size: 1.2em;
     }
 }
-/* nav */
+/* fonctionnement */
 .nav {
+    position: relative;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 10px;
     padding-top: 50px;
     padding-bottom: 60px;
     background-color: #FFF;
@@ -98,6 +101,7 @@ a {
         margin-bottom: 20px;
         margin-top: 10px;
         margin-left: 40px;
+        margin-right: 10px;
         align-items: center;
         width: 400px;
         height: 80px;
@@ -132,121 +136,8 @@ a {
         display: flex;
     }
 }
-/* Menus */
-.img-1 {
-    width: 100%;
-    height: 20%;
-}
 
-.menu {
-    position: absolute;
-    width: 100%;
-    top: 400px;
-    background-color: rgb(245, 245, 245);
-    border-radius: 70px 70px 0 0;
-    padding-left: 0px;
-    padding-top: 30px;
-    margin: auto;
-    .menu-1 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        h1 {
-            font-family: Shrikhand;
-            font-size: 2em;
-            padding-left: 20px;
-        }
-    }
-    .fa-heart {
-        cursor: pointer;
-        font-size: 2.2em;
-        padding-right: 30px;
-    }
-    .entré, .plats, .dessert {
-        padding-top: 20px;
-        padding-left: 20px;
-        .titr-1 {
-            color: rgb(102, 102, 102);
-            border-bottom: 3px solid $color-tertiaire;
-            width: 60px;
-            font-size: 1.45em;
-        }
-    }
-        .entr-1, .plt-1, .dsrt-1 {
-            position: relative;
-            background-color: #FFF;
-            border-radius: 20px;
-            box-shadow: 0 1px 10px 0;
-            padding-left: 10px;
-            padding: -0.1px 0 -0.1px 0;
-            margin-right: 20px;
-            margin-left: 20px;
-            cursor: pointer;    
-            &:hover {
-                & > .fa-check-circle {
-                    transform-origin: right 50%;
-                transition: transform 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) ;
-                    transform: scalex(1);  
-                }
-                &.entr-1, &.plt-1, &.dsrt-1 {
-                    padding-right: 60px;
-                    transition: 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000);
-                }                    
-            } 
-
-            // animation
-            .fa-check-circle {
-                color: #FFF;
-                font-size: 1.5em;
-                position: absolute;
-                background-color: $color-tertiaire;
-                border-radius: 0 20px 20px 0;
-                padding-top: 25px;
-                padding-bottom: 19px;
-                padding-left: 30px;
-                top: 0;
-                right: 0;
-                width: 50px;
-                transform: scalex(0);
-                
-            }
-            h3 {
-                padding-top: 10px;
-                height: 10px;
-            }
-            p {
-                display: flex;
-                justify-content: space-between;
-                padding-right: 25px;
-                padding-bottom:10px;
-            }          
-        } 
-
-    .boutton {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    button {
-        height: 60px;
-        width: 270px;
-        margin-bottom: 100px;
-        margin-top: 40px;
-        border-radius: 30px;
-        box-shadow: 0 1px 10px 0;
-        border: none;
-        cursor: pointer;
-        background-image: linear-gradient($color-secondary, $color-primary);
-        color: #FFF;
-        font-size: 1.2em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-/* section */
+/* restorants */
 .sct-1 {
     background-color: rgb(240, 240, 240);
     padding-top: 25px;
@@ -260,6 +151,7 @@ a {
         padding-left: 30px;
         padding-bottom: 5px;
     }
+    // restos
     .resto-1 {
         margin: auto;
         width: 470px;
@@ -307,7 +199,7 @@ a {
     }
 }
 
-/* footer */
+/* footer page d'acceuil*/
 .footer {
     background-color:rgb(53, 53, 53);
     padding-top: 50px;
@@ -339,22 +231,135 @@ a {
         padding-left: 30px; 
         padding-bottom: -5px;
         color: white;
-        }    
+    }    
 }
+
+/* Menus */
+.img-1 {
+    width: 100%;
+    height: 20%;
+}
+
+.menu {
+    position: absolute;
+    width: 100%;
+    top: 400px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 38px 38px 0 0;
+    .menu-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+            font-family: Shrikhand;
+            font-size: 2em;
+            padding-left: 20px;
+            margin-top: 34px;
+        }
+    }
+    .fa-heart {
+        cursor: pointer;
+        font-size: 2.2em;
+        padding-right: 38px;
+    }
+    .entré, .plats, .dessert {
+        margin-bottom: 35px;
+        .titr-1 {
+            margin-top: 0px;
+            margin-left: 20px;
+            color: rgb(102, 102, 102);
+            border-bottom: 3px solid $color-tertiaire;
+            padding-bottom: 9px;
+            width: 60px;
+            font-size: 1.45em;
+        }
+        .entr-1, .plt-1, .dsrt-1 {
+            position: relative;
+            background-color: #FFF;
+            border-radius: 20px;
+            box-shadow: 0 1px 10px 0;
+            padding-left: 10px;
+            margin-right: 12px;
+            margin-left: 14px;
+            cursor: pointer;    
+            &:hover {
+                & > .fa-check-circle {
+                    transform-origin: right 50%;
+                    transition: transform 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) ;
+                    transform: scalex(1);  
+                }
+                &.entr-1, &.plt-1, &.dsrt-1 {
+                    padding-right: 62px;
+                    transition: 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+                }                    
+            } 
+            
+            // animation
+            .fa-check-circle {
+                color: #FFF;
+                font-size: 1.5em;
+                position: absolute;
+                background-color: $color-tertiaire;
+                border-radius: 0 20px 20px 0;
+                padding-top: 28px;
+                padding-bottom: 26px;
+                padding-left: 19px;
+                padding-right: 20px;
+                top: 0;
+                right: 0;
+                transform: scalex(0); 
+            }
+            h3 {
+                padding-top: 16px;
+                margin-bottom: 0;
+            }
+            p {
+                margin-top: 8px;
+                display: flex;
+                justify-content: space-between;
+                padding-right: 25px;
+                padding-bottom: 13px;
+                margin-bottom: 0;
+            }          
+        } 
+        
+    }
+    .boutton {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    button {
+        border: px solid black;
+        height: 60px;
+        width: 270px;
+        margin-bottom: 83px;
+        margin-top: 15px;
+        border-radius: 30px;
+        box-shadow: 0 1px 10px 0;
+        border: none;
+        cursor: pointer;
+        background-image: linear-gradient($color-secondary, $color-primary);
+        color: #FFF;
+        font-size: 1.2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+// footer menus
 .footer-1 {
     position: absolute;
     width: 100%;
-    top: 1792px; 
+    top: 1774px; 
     &.--mint {
-        top: 1878px
+        top: 1871px
     }  
 }
 
-.footer-email {
-    top: 1150px;
-}
-
-/* Email */
+/* Formulaire */
 .formulaire {
     h1 {
         text-align: center;
@@ -374,7 +379,7 @@ form {
     p {
         font-family: Shrikhand;
         font-size: 1.5em;
-
+        
     }
     input {
         width: 50%;
@@ -385,18 +390,24 @@ form {
         margin-top: 5px;
         margin-bottom: 10px; 
     }
+    
+    // nom
     .nom { 
         border: none;
         width: 50%;
         display: flex;
         flex-direction: column;
     }
+    
+    // adresse mail
     .mail {
         padding-top: 50px;
         input {
             margin-top: -5px;
         }
     }
+
+    // message
     .msg {
         padding-top: 50px;
         padding-bottom: 10px;
@@ -407,7 +418,7 @@ form {
             padding-top: 5px;
         }
     }
-    
+
     button{
         border: none;
         width: 100px;
@@ -418,56 +429,117 @@ form {
     }
 }
 
+// footer email
+.footer-email {
+    top: 1150px;
+}
+
+
 @media screen and (max-width: 680px){
+    // logo
+    .header {
+       height: 63px;
+       display: flex;
+       align-items: center;
+       img {
+            height: 29px;
+            align-items: center;
+       }
+       .fleche {
+            height: 16px;
+            justify-content: flex-start;
+            align-items: center;
+       }
+    }
     
-    .resto-1 {
-        margin: auto;
-        width: 90%;
-    }
-
-    .fonct-1 {
-        flex-direction: column;
-        h1 {
-            width: 600px;
-            text-align: center;
-        }
-    }
-
-    .sct-1 {
-        background-color: rgb(240, 240, 240);
-        padding-top: 25px;
-        padding-bottom: 30px;
-        padding-bottom: 20px;
-    }
-
-    .img-1 {
-        width: 100%;
-        height: auto;
-    }
-
     .menu {
         position: absolute;
-        width: 100%;
-        top: 400px;
-        background-color: rgb(245, 245, 245);
-        border-radius: 70px 70px 0 0;
-        padding-left: 20px;
-        padding-top: 30px;
-        margin: auto;
-    }
-    
-    /* nav */
-    .nav {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: left;
-        justify-content: center;
-        padding-left: 10px;
-        padding-top: 50px;
-        padding-bottom: 60px;
-        background-color: #FFF;
-        h1 {
-            padding-left: 15px;
+        top: 283px;
+        .menu-1 {
+            h1 {
+                height: 33px;
+            }
+            .fa-heart {
+                height: 21px;    
+            }
         }
+        .entré, .plats, .dessert {
+            .titr-1 {
+                font-size: 12px;
+                width: 40px;
+                padding-bottom: 8px;
+            }
+            .entr-1, .plt-1, .dsrt-1 {
+                h3 {
+                height: 18px; 
+                }
+                .fa-check-circle {
+                    font-size: 20px;
+                    padding-top: 28px;
+                    padding-bottom: 26px;
+                }
+            }
+        }
+    } 
+    // footer menus
+    .footer-1 {
+        position: absolute;
+        width: 100%;
+        top: 1549px; 
+        &.--mint {
+            top: 1642px
+        }  
+     
     }
+
 }
+        // .resto-1 {
+        //     margin: auto;
+        //     width: 90%;
+        // }
+    
+        // .fonct-1 {
+        //     flex-direction: column;
+        //     h1 {
+        //         width: 600px;
+        //         text-align: center;
+        //     }
+        // }
+    
+        // .sct-1 {
+        //     background-color: rgb(240, 240, 240);
+        //     padding-top: 25px;
+        //     padding-bottom: 30px;
+        //     padding-bottom: 20px;
+        // }
+    
+        // .img-1 {
+        //     width: 100%;
+        //     height: auto;
+        // }
+    
+        // .menu {
+        //     position: absolute;
+        //     width: 100%;
+        //     top: 400px;
+        //     background-color: rgb(245, 245, 245);
+        //     border-radius: 70px 70px 0 0;
+        //     padding-left: 20px;
+        //     padding-top: 30px;
+        //     margin: auto;
+        // }
+        
+        // /* nav */
+        // .nav {
+        //     display: flex;
+        //     flex-wrap: wrap;
+        //     text-align: left;
+        //     justify-content: center;
+        //     padding-left: 10px;
+        //     padding-top: 50px;
+        //     padding-bottom: 60px;
+        //     background-color: #FFF;
+        //     h1 {
+        //         padding-left: 15px;
+        //     }
+        // }
