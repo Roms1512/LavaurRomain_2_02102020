@@ -1,23 +1,18 @@
 @charset "UTF-8";
 body {
-  font-family: Roboto;
-  width: 600px;
-  margin: auto;
   background-color: #d8d8d8;
-  box-shadow: 0 3px 10px 0;
+  font-family: Roboto;
+  width: 100%;
+  margin: auto;
 }
 
-.body {
-  box-shadow: none;
+img {
+  object-fit: cover;
 }
 
 a {
   text-decoration: none;
   color: black;
-}
-
-img {
-  object-fit: cover;
 }
 
 /* header */
@@ -82,25 +77,27 @@ img {
 
 /* nav */
 .nav {
-  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
   padding-left: 10px;
   padding-top: 50px;
   padding-bottom: 60px;
   background-color: #FFF;
 }
 .nav h1 {
+  width: 100%;
   padding-left: 15px;
 }
 .nav .fonct-1 {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   border-radius: 25px;
-  box-shadow: 0px 1px 10px 0px;
+  box-shadow: 0 1px 10px 0;
   margin-bottom: 20px;
   margin-top: 10px;
   margin-left: 40px;
   align-items: center;
-  width: 500px;
+  width: 400px;
   height: 80px;
   font-size: 1.3em;
   background-color: whitesmoke;
@@ -126,7 +123,7 @@ img {
   font-size: 1.3em;
   height: 30px;
   width: 30px;
-  padding: 10px 0px 5px 18px;
+  padding: 10px 0 5px 18px;
   color: #FFF;
 }
 .nav .fonct {
@@ -135,17 +132,17 @@ img {
 
 /* Menus */
 .img-1 {
-  width: 600px;
-  height: auto;
+  width: 100%;
+  height: 20%;
 }
 
 .menu {
   position: absolute;
-  width: 580px;
+  width: 100%;
   top: 400px;
   background-color: whitesmoke;
   border-radius: 70px 70px 0 0;
-  padding-left: 20px;
+  padding-left: 0px;
   padding-top: 30px;
   margin: auto;
 }
@@ -157,6 +154,7 @@ img {
 .menu .menu-1 h1 {
   font-family: Shrikhand;
   font-size: 2em;
+  padding-left: 20px;
 }
 .menu .fa-heart {
   cursor: pointer;
@@ -165,6 +163,7 @@ img {
 }
 .menu .entré, .menu .plats, .menu .dessert {
   padding-top: 20px;
+  padding-left: 20px;
 }
 .menu .entré .titr-1, .menu .plats .titr-1, .menu .dessert .titr-1 {
   color: #666666;
@@ -173,13 +172,38 @@ img {
   font-size: 1.45em;
 }
 .menu .entr-1, .menu .plt-1, .menu .dsrt-1 {
+  position: relative;
   background-color: #FFF;
   border-radius: 20px;
-  box-shadow: 0px 1px 10px 0px;
-  width: 95%;
+  box-shadow: 0 1px 10px 0;
   padding-left: 10px;
-  padding: -0.1px 0 -0.1px 10px;
+  padding: -0.1px 0 -0.1px 0;
+  margin-right: 20px;
+  margin-left: 20px;
   cursor: pointer;
+}
+.menu .entr-1:hover > .fa-check-circle, .menu .plt-1:hover > .fa-check-circle, .menu .dsrt-1:hover > .fa-check-circle {
+  transform-origin: right 50%;
+  transition: transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transform: scalex(1);
+}
+.menu .entr-1:hover.entr-1, .menu .entr-1:hover.plt-1, .menu .entr-1:hover.dsrt-1, .menu .plt-1:hover.entr-1, .menu .plt-1:hover.plt-1, .menu .plt-1:hover.dsrt-1, .menu .dsrt-1:hover.entr-1, .menu .dsrt-1:hover.plt-1, .menu .dsrt-1:hover.dsrt-1 {
+  padding-right: 60px;
+  transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.menu .entr-1 .fa-check-circle, .menu .plt-1 .fa-check-circle, .menu .dsrt-1 .fa-check-circle {
+  color: #FFF;
+  font-size: 1.5em;
+  position: absolute;
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  padding-top: 25px;
+  padding-bottom: 19px;
+  padding-left: 30px;
+  top: 0;
+  right: 0;
+  width: 50px;
+  transform: scalex(0);
 }
 .menu .entr-1 h3, .menu .plt-1 h3, .menu .dsrt-1 h3 {
   padding-top: 10px;
@@ -191,19 +215,26 @@ img {
   padding-right: 25px;
   padding-bottom: 10px;
 }
+.menu .boutton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .menu button {
   height: 60px;
   width: 270px;
   margin-bottom: 100px;
   margin-top: 40px;
-  margin-left: 140px;
   border-radius: 30px;
-  box-shadow: 0px 1px 10px 0px;
+  box-shadow: 0 1px 10px 0;
   border: none;
   cursor: pointer;
   background-image: linear-gradient(#FF79DA, #9356DC);
   color: #FFF;
   font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* section */
@@ -211,19 +242,24 @@ img {
   background-color: #f0f0f0;
   padding-top: 25px;
   padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .sct-1 h1 {
+  width: 100%;
   padding-left: 30px;
   padding-bottom: 5px;
 }
 .sct-1 .resto-1 {
   margin: auto;
-  width: 90%;
-  box-shadow: 0px 1px 10px 0px;
+  width: 470px;
+  box-shadow: 0 1px 10px 0;
   border-radius: 30px;
   overflow: hidden;
   padding-bottom: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   background-color: #FFF;
 }
 .sct-1 .resto-1 .img-1 {
@@ -266,7 +302,7 @@ img {
 .footer {
   background-color: #353535;
   padding-top: 50px;
-  padding-left: 30px;
+  padding-left: 0px;
   padding-bottom: 40px;
   font-size: 1em;
 }
@@ -276,25 +312,30 @@ img {
   display: flex;
   justify-content: flex-start;
   height: 25px;
+  padding-left: 30px;
 }
 .footer .menu-footer a {
-  height: 30px;
+  height: 20px;
   display: flex;
   align-items: center;
-  width: 200px;
+  width: 300px;
+  padding-bottom: 8px;
 }
 .footer .menu-footer a i {
-  padding-right: 20px;
-  width: 10px;
+  padding-right: 0;
+  width: 0;
+  height: 5px;
 }
 .footer p, .footer i {
+  height: 10px;
+  padding-left: 30px;
+  padding-bottom: -5px;
   color: white;
-  height: 15px;
 }
 
 .footer-1 {
   position: absolute;
-  width: 570px;
+  width: 100%;
   top: 1792px;
 }
 .footer-1.--mint {
@@ -314,7 +355,7 @@ img {
 }
 
 form {
-  box-shadow: 0px 1px 10px 0px;
+  box-shadow: 0 1px 10px 0;
   background-color: #949494;
   border-radius: 20px;
   display: flex;
@@ -364,6 +405,59 @@ form button {
   border-radius: 20px;
   margin-top: 5px;
   background-image: linear-gradient(#FF79DA, #9356DC);
+}
+
+@media screen and (max-width: 680px) {
+  .resto-1 {
+    margin: auto;
+    width: 90%;
+  }
+
+  .fonct-1 {
+    flex-direction: column;
+  }
+  .fonct-1 h1 {
+    width: 600px;
+    text-align: center;
+  }
+
+  .sct-1 {
+    background-color: #f0f0f0;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    padding-bottom: 20px;
+  }
+
+  .img-1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .menu {
+    position: absolute;
+    width: 100%;
+    top: 400px;
+    background-color: whitesmoke;
+    border-radius: 70px 70px 0 0;
+    padding-left: 20px;
+    padding-top: 30px;
+    margin: auto;
+  }
+
+  /* nav */
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: center;
+    padding-left: 10px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: #FFF;
+  }
+  .nav h1 {
+    padding-left: 15px;
+  }
 }
 
 /*# sourceMappingURL=site.css.map */

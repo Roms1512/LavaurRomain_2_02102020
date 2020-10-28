@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./main.scss:./site.css"
+    "sass": "sass --watch ./main.scss:./site.css",
+    "prefix": "postcss ./site.css --use autoprefixer -d"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/Roms1512/LavaurRomain_2_02102020/issues"
   },
-  "homepage": "https://github.com/Roms1512/LavaurRomain_2_02102020#readme"
+  "homepage": "https://github.com/Roms1512/LavaurRomain_2_02102020#readme",
+  "dependencies": {
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8.1.3",
+    "postcss-cli": "^8.1.0"
+  }
 }
