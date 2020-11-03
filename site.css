@@ -82,13 +82,14 @@ a {
 .nav {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding-top: 50px;
   padding-bottom: 60px;
   background-color: #FFF;
 }
 .nav h1 {
   padding-left: 15px;
-  width: 80%;
+  width: 100%;
 }
 .nav .fonct {
   display: flex;
@@ -245,7 +246,7 @@ a {
   height: 20px;
   margin-right: 11px;
 }
-.footer .menu-footer a__mint {
+.footer .menu-footer a.__mint {
   padding-left: 26px;
 }
 .footer p, .footer i {
@@ -311,7 +312,6 @@ a {
   transform-origin: right 50%;
   transition: transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
   transform: scalex(1);
-  animation-direction: rotate-center 0.6s ease-in-out both;
 }
 .menu .entré .entr-1:hover.entr-1, .menu .entré .entr-1:hover.plt-1, .menu .entré .entr-1:hover.dsrt-1, .menu .entré .plt-1:hover.entr-1, .menu .entré .plt-1:hover.plt-1, .menu .entré .plt-1:hover.dsrt-1, .menu .entré .dsrt-1:hover.entr-1, .menu .entré .dsrt-1:hover.plt-1, .menu .entré .dsrt-1:hover.dsrt-1, .menu .plats .entr-1:hover.entr-1, .menu .plats .entr-1:hover.plt-1, .menu .plats .entr-1:hover.dsrt-1, .menu .plats .plt-1:hover.entr-1, .menu .plats .plt-1:hover.plt-1, .menu .plats .plt-1:hover.dsrt-1, .menu .plats .dsrt-1:hover.entr-1, .menu .plats .dsrt-1:hover.plt-1, .menu .plats .dsrt-1:hover.dsrt-1, .menu .dessert .entr-1:hover.entr-1, .menu .dessert .entr-1:hover.plt-1, .menu .dessert .entr-1:hover.dsrt-1, .menu .dessert .plt-1:hover.entr-1, .menu .dessert .plt-1:hover.plt-1, .menu .dessert .plt-1:hover.dsrt-1, .menu .dessert .dsrt-1:hover.entr-1, .menu .dessert .dsrt-1:hover.plt-1, .menu .dessert .dsrt-1:hover.dsrt-1 {
   padding-right: 62px;
@@ -329,7 +329,7 @@ a {
   padding-right: 20px;
   top: 0;
   right: 0;
-  transform: scalex(0);
+  transform: scalex(0) rotate(360deg);
 }
 .menu .entré .entr-1 h3, .menu .entré .plt-1 h3, .menu .entré .dsrt-1 h3, .menu .plats .entr-1 h3, .menu .plats .plt-1 h3, .menu .plats .dsrt-1 h3, .menu .dessert .entr-1 h3, .menu .dessert .plt-1 h3, .menu .dessert .dsrt-1 h3 {
   padding-top: 16px;
@@ -590,9 +590,6 @@ form button {
     bottom: 33px;
   }
 
-  .menu {
-    position: relative;
-  }
   .menu .menu-1 h1 {
     width: 90%;
   }
@@ -612,10 +609,6 @@ form button {
     font-size: 20px;
     padding-top: 28px;
     padding-bottom: 29px;
-  }
-
-  .footer-1 {
-    width: 100%;
   }
 }
 
