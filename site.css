@@ -86,9 +86,9 @@ a {
   padding-top: 50px;
   padding-bottom: 60px;
   background-color: #FFF;
+  padding-left: 15px;
 }
 .nav h1 {
-  padding-left: 15px;
   width: 100%;
 }
 .nav .fonct {
@@ -162,14 +162,13 @@ a {
   background-color: #f0f0f0;
   padding-top: 25px;
   padding-bottom: 30px;
+  padding-right: 15px;
   display: flex;
   flex-wrap: wrap;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 .sct-1 h1 {
   width: 100%;
-  padding-left: 30px;
+  padding-left: 15px;
   padding-bottom: 5px;
 }
 .sct-1 .resto-1 {
@@ -499,7 +498,7 @@ form button {
   }
   .nav .fonct .n° {
     position: absolute;
-    left: 20px;
+    left: 5px;
     top: 26px;
     display: flex;
     justify-content: center;
@@ -516,7 +515,7 @@ form button {
     padding-left: 6%;
     padding-right: 10%;
     margin-right: 20px;
-    margin-left: 32px;
+    margin-left: 17px;
     width: 70%;
   }
   .nav .fonct-1 a p {
@@ -598,7 +597,7 @@ form button {
     height: 21px;
   }
   .menu .entré .titr-1, .menu .plats .titr-1, .menu .dessert .titr-1 {
-    font-size: 12px;
+    font-size: 15px;
     width: 40px;
     padding-bottom: 8px;
   }
