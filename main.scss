@@ -1,13 +1,23 @@
+// variable
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiaire: #99E2D0;
 
+//  mixin
+@mixin pseudo-after {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; 
+}
 body {
     background-color: rgb(216, 216, 216);
     font-family: Roboto;
     width: 100%;
     margin: auto;
-    position: relative;
 }
 
 img {
@@ -43,6 +53,7 @@ a {
 
 /* acceuil */
 .acceuil {
+    
     width: 100%;
     text-align: center;
     background-color: rgb(241, 241, 241);
@@ -84,15 +95,14 @@ a {
 }
 /* fonctionnement */
 .nav {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     padding-top: 50px;
     padding-bottom: 60px;
     background-color: #FFF;
     h1 {
-        width: 100%;
         padding-left: 15px;
+        width: 80%;
     }
 
     .fonct{
@@ -112,9 +122,12 @@ a {
             height: 30px;
             width: 30px;
             color: #FFF;
+            z-index: 2;
         }
     }   
     .fonct-1 {
+        width: 322px;
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -127,11 +140,23 @@ a {
         padding-left: 20px;
         padding-right: 20px;
         height: 80px;
-        font-size: 1.3em;
+        font-size: 1.2em;
         background-color: rgb(245, 245, 245);
+        z-index: 1;
         &:hover{
-            background-color: #9256dc50;
+            &::after {
+                opacity: 1;              
+            }
         }
+        &::after {
+            @include pseudo-after();
+            background-color: #9256dc50;
+            opacity: 0;
+            transition: opacity 250ms;
+            border-radius: 25px;  
+        }
+        
+        
         & a{
             display: flex;
             align-items: center;
@@ -148,6 +173,7 @@ a {
 
 /* restorants */
 .sct-1 {
+    
     background-color: rgb(240, 240, 240);
     padding-top: 25px;
     padding-bottom: 30px;
@@ -251,13 +277,13 @@ a {
 .img-1 {
     position: relative;
     width: 100%;
-    height: 20%;
+    height: 300px;
 }
 
 .menu {
-    position: absolute;
+    position: relative;
+    top: -50px;
     width: 100%;
-    top: 400px;
     background-color: rgb(245, 245, 245);
     border-radius: 38px 38px 0 0;
     .menu-1 {
@@ -279,7 +305,7 @@ a {
     .entré, .plats, .dessert {
         margin-bottom: 35px;
         .titr-1 {
-            margin-top: 0px;
+            margin-top: 0;
             margin-left: 20px;
             color: rgb(102, 102, 102);
             border-bottom: 3px solid $color-tertiaire;
@@ -295,8 +321,7 @@ a {
             padding-left: 10px;
             margin-right: 12px;
             margin-left: 14px;
-            
-            cursor: pointer;    
+            cursor: pointer;               
             &:hover {
                 & > .fa-check-circle {
                     transform-origin: right 50%;
@@ -323,13 +348,15 @@ a {
                 padding-right: 20px;
                 top: 0;
                 right: 0;
-                transform: scalex(0) ;
-                background-attachment: fixed;
-            
+                transform: scalex(0);
             }
+
             h3 {
                 padding-top: 16px;
                 margin-bottom: 0;
+                text-overflow: ellipsis;
+                white-space: nowrap; 
+                overflow: hidden;
             }
             p {
                 margin-top: 8px;
@@ -338,7 +365,14 @@ a {
                 padding-right: 25px;
                 padding-bottom: 13px;
                 margin-bottom: 0;
-            }          
+            }  
+            .ellipsis {
+                text-overflow: ellipsis;
+                white-space: nowrap; 
+                overflow: hidden;
+                display: block;
+                box-sizing: border-box;
+            }        
         } 
         
     }
@@ -349,7 +383,6 @@ a {
     }
     
     button {
-        border: px solid black;
         height: 60px;
         width: 270px;
         margin-bottom: 83px;
@@ -368,13 +401,8 @@ a {
 }
 
 // footer menus
-.footer-1 {
-    position: absolute;
-    width: 100%;
-    top: 1774px; 
-    &.--mint {
-        top: 1871px
-    }  
+.footer-1 {  
+    width: 100%;  
 }
 
 /* Formulaire */
@@ -448,9 +476,7 @@ form {
 }
 
 // footer email
-.footer-email {
-    top: 1150px;
-}
+
 
 
 
@@ -472,7 +498,7 @@ form {
             align-items: center; 
         }
        .fleche {
-            height: 16px;
+            font-size: 20px;
             justify-content: flex-start;
             align-items: center;
        }
@@ -514,7 +540,7 @@ form {
         flex-direction: column;
         align-items: flex-start;
         h1 {
-            font-size: 18px;
+            font-size: 19px;
             margin-bottom: 31px;
         }
         .fonct {
@@ -544,7 +570,7 @@ form {
             width: 70%;
             a {
                 p {
-                    font-size: 13px;
+                    font-size: 16px;
                     margin: 0;
                 }
                 .ico {
@@ -575,7 +601,7 @@ form {
             width: 89.5%;
             padding-bottom: 0;
             margin-left: 20px;
-            margin-right: 0;
+            margin-right: 20px;
             margin-bottom: 18px;
             height: 251px;
             position: relative;
@@ -623,8 +649,7 @@ form {
 
     // menus
     .menu {
-        position: absolute;
-        top: 283px;
+        position: relative;
         .menu-1 {
             h1 {
                 width: 90%;
@@ -642,50 +667,19 @@ form {
             }
             .entr-1, .plt-1, .dsrt-1 {
                 h3 {
-                height: 18px; 
+                    font-size: 18px; 
                 }
                 .fa-check-circle {
                     font-size: 20px;
                     padding-top: 28px;
-                    padding-bottom: 26px;
+                    padding-bottom: 29px;
                 }
             }
         }
     } 
     // footer menus
-    .footer {
-        position: absolute;
-            width: 100%;
-            top: 1563px; 
-            &.--mint {
-                top: 1656px
-            }
+    .footer-1 {   
+        width: 100%;            
     }
    
-}
-
-@media screen and (max-width: 390px){
-   // logo
-    .header {
-        height: 63px;
-        display: flex;
-        align-items: center;
-        img {
-            height: 28px;
-            width: auto;
-            align-items: center; 
-            margin-left: 65px;
-            margin-right: 106px;
-        }
-    }
-    
-    // footer menus
-    .footer-1 {
-        position: absolute;
-        width: 100%;
-        top: 1629px; 
-        &.--mint {
-            top: 1722px
-        }  
-    }  
 }
