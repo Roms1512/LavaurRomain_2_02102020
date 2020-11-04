@@ -186,6 +186,7 @@ a {
     padding-right: 15px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     h1 {
         width: 100%;
         padding-left: 15px;
@@ -473,7 +474,7 @@ a {
 
 form {
     box-shadow: 0 1px 10px 0;
-    background-color: rgb(148, 148, 148);
+    background-color: rgb(88, 88, 88);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -733,7 +734,7 @@ form {
     }
 
     
-    // -----------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
     
     
     form {
@@ -748,5 +749,8 @@ form {
         button { margin: auto; }
     }
 
-}
+    // footer-email
+    .footer-email {
+         margin-top: 100px; }
 
+}
