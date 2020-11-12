@@ -15,6 +15,23 @@ a {
   color: black;
 }
 
+.fa-heart {
+  transition: all 0.3s;
+}
+.fa-heart:hover {
+  font-weight: bolder;
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #FF79DA, #9356DC);
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.fa-heart:active {
+  transform: scale(0.98);
+  transition: 0s;
+}
+
 /* logo */
 .header {
   width: 100%;
@@ -34,6 +51,14 @@ a {
   display: flex;
   align-items: center;
   margin-left: 23px;
+  transition: all 0.1s;
+}
+.header .fleche:hover {
+  transform: scale(1.1);
+}
+.header .fleche:active {
+  transition: 0s;
+  transform: scale(1);
 }
 
 /* acceuil */
@@ -76,6 +101,14 @@ a {
   background-image: linear-gradient(#FF79DA, #9356DC);
   color: #FFF;
   font-size: 1.2em;
+  transition: 0.3s;
+}
+.acceuil button:hover {
+  transform: scale(1.06);
+}
+.acceuil button:active {
+  transition: 0s;
+  transform: scale(1);
 }
 
 /* fonctionnement */
@@ -129,9 +162,17 @@ a {
   font-size: 1.2em;
   background-color: whitesmoke;
   z-index: 1;
+  transition: all 0.3s;
+}
+.nav .fonct-1:hover {
+  transform: scale(1.06);
 }
 .nav .fonct-1:hover::after {
   opacity: 1;
+}
+.nav .fonct-1:active {
+  transform: scale(1);
+  transition: 0s;
 }
 .nav .fonct-1::after {
   content: "";
@@ -183,6 +224,19 @@ a {
   width: 500px;
   height: 280px;
   position: relative;
+  transition: all 0.3s;
+}
+.sct-1 .resto-1:hover {
+  transform: scale(1.06);
+}
+.sct-1 .resto-1:hover .img-1 {
+  animation-delay: 0.5s;
+  transition: 0.3s;
+  transform: scale(1.06);
+}
+.sct-1 .resto-1:active {
+  transition: 0s;
+  transform: scale(1);
 }
 .sct-1 .resto-1 .img-1 {
   height: 174px;
@@ -255,6 +309,13 @@ a {
   font-size: 16px;
   color: white;
 }
+.footer p:hover, .footer i:hover {
+  transform: scale(1.06);
+}
+.footer p:active, .footer i:active {
+  transition: 0s;
+  transform: scale(1);
+}
 
 /* Menus */
 .img-1 {
@@ -281,6 +342,7 @@ a {
   font-size: 2em;
   padding-left: 20px;
   margin-top: 34px;
+  height: 100%;
 }
 .menu .fa-heart {
   cursor: pointer;
@@ -355,6 +417,10 @@ a {
   transition: transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
   transform: scalex(1);
 }
+.menu .entré .entr:hover > .fa-check-circle::before, .menu .entré .plt:hover > .fa-check-circle::before, .menu .entré .dsrt:hover > .fa-check-circle::before, .menu .plats .entr:hover > .fa-check-circle::before, .menu .plats .plt:hover > .fa-check-circle::before, .menu .plats .dsrt:hover > .fa-check-circle::before, .menu .dessert .entr:hover > .fa-check-circle::before, .menu .dessert .plt:hover > .fa-check-circle::before, .menu .dessert .dsrt:hover > .fa-check-circle::before {
+  display: block;
+  animation: rotation 0.5s ease-in-out;
+}
 .menu .entré .entr:hover.entr, .menu .entré .entr:hover.plt, .menu .entré .entr:hover.dsrt, .menu .entré .plt:hover.entr, .menu .entré .plt:hover.plt, .menu .entré .plt:hover.dsrt, .menu .entré .dsrt:hover.entr, .menu .entré .dsrt:hover.plt, .menu .entré .dsrt:hover.dsrt, .menu .plats .entr:hover.entr, .menu .plats .entr:hover.plt, .menu .plats .entr:hover.dsrt, .menu .plats .plt:hover.entr, .menu .plats .plt:hover.plt, .menu .plats .plt:hover.dsrt, .menu .plats .dsrt:hover.entr, .menu .plats .dsrt:hover.plt, .menu .plats .dsrt:hover.dsrt, .menu .dessert .entr:hover.entr, .menu .dessert .entr:hover.plt, .menu .dessert .entr:hover.dsrt, .menu .dessert .plt:hover.entr, .menu .dessert .plt:hover.plt, .menu .dessert .plt:hover.dsrt, .menu .dessert .dsrt:hover.entr, .menu .dessert .dsrt:hover.plt, .menu .dessert .dsrt:hover.dsrt {
   padding-right: 62px;
   transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
@@ -369,13 +435,21 @@ a {
     opacity: 1;
   }
 }
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 .menu .entré .entr .fa-check-circle, .menu .entré .plt .fa-check-circle, .menu .entré .dsrt .fa-check-circle, .menu .plats .entr .fa-check-circle, .menu .plats .plt .fa-check-circle, .menu .plats .dsrt .fa-check-circle, .menu .dessert .entr .fa-check-circle, .menu .dessert .plt .fa-check-circle, .menu .dessert .dsrt .fa-check-circle {
   color: #FFF;
   font-size: 1.5em;
   position: absolute;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
-  padding-top: 28px;
+  padding-top: 27px;
   padding-bottom: 26px;
   padding-left: 19px;
   padding-right: 20px;
@@ -425,6 +499,14 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s;
+}
+.menu button:hover {
+  transform: scale(1.06);
+}
+.menu button:active {
+  transition: 0s;
+  transform: scale(1);
 }
 
 .footer-1 {
@@ -496,6 +578,14 @@ form button {
   border-radius: 20px;
   margin-top: 5px;
   background-image: linear-gradient(#FF79DA, #9356DC);
+  transition: all 0.3s;
+}
+form button:hover {
+  transform: scale(1.06);
+}
+form button:active {
+  transition: 0s;
+  transform: scale(1);
 }
 
 .footer-email {
@@ -668,7 +758,7 @@ form button {
   }
   .menu .menu-1 .fa-heart {
     width: 10%;
-    height: 21px;
+    height: 100%;
   }
   .menu .entré .titr-1, .menu .plats .titr-1, .menu .dessert .titr-1 {
     font-size: 15px;

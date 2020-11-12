@@ -34,6 +34,24 @@ a {
     text-decoration: none;
     color: black; }
 
+.fa-heart {
+    transition: all 0.3s;
+    &:hover {
+        font-weight: bolder; 
+        transform: scale(1.1);
+        background: linear-gradient(45deg, $color-secondary, $color-primary);
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    &:active {
+        transform: scale(0.98);
+        transition: 0s;
+    }
+}
+
 
 // --------------------------------------------------------------------------------------------
 
@@ -55,7 +73,17 @@ a {
         font-size: 2.8em;
         display: flex;
         align-items: center;
-        margin-left: 23px; }
+        margin-left: 23px;
+        transition: all 0.1s;
+        &:hover {
+            transform: scale(1.1);
+        }
+        
+        &:active {
+            transition: 0s;
+            transform: scale(1);
+        }
+    }
 }
 
 
@@ -97,7 +125,17 @@ a {
         cursor: pointer;
         background-image: linear-gradient($color-secondary, $color-primary);
         color: #FFF;
-        font-size: 1.2em; }
+        font-size: 1.2em; 
+        transition: 0.3s;
+        &:hover {
+            transform: scale(1.06);
+        }
+        
+        &:active {
+            transition: 0s;
+            transform: scale(1);
+        }
+    }
 }
 
 
@@ -151,10 +189,16 @@ a {
         font-size: 1.2em;
         background-color: rgb(245, 245, 245);
         z-index: 1;
+        transition: all 0.3s;
         &:hover{
+            transform: scale(1.06);
             &::after {
                 opacity: 1;              
             }
+        }
+        &:active {
+            transform: scale(1);
+            transition: 0s;
         }
 
         &::after {
@@ -203,7 +247,22 @@ a {
         margin-bottom: 18px;
         width: 500px;
         height: 280px;
-        position: relative; 
+        position: relative;
+        transition: all 0.3s; 
+        &:hover {
+            transform: scale(1.06);
+            .img-1 {
+                animation-delay: 0.5s;
+                transition: 0.3s;
+                transform: scale(1.06);
+            }
+        }
+        
+        &:active {
+            transition: 0s;
+            transform: scale(1);
+        }
+
         .img-1 { height: 174px; }
 
         .nouveau-1, .nouveau-2 {
@@ -271,7 +330,16 @@ a {
         margin-bottom: 0;  
         margin-top: 10px;      
         font-size: 16px;
-        color: white; } 
+        color: white; 
+        &:hover {
+            transform: scale(1.06);
+        }
+        
+        &:active {
+            transition: 0s;
+            transform: scale(1);
+        }
+    } 
 }
 
 
@@ -299,17 +367,21 @@ a {
             font-family: Shrikhand;
             font-size: 2em;
             padding-left: 20px;
-            margin-top: 34px; }
-    }
-
-    .fa-heart {
-        cursor: pointer;
-        font-size: 2.2em;
-        padding-right: 38px; }
+            margin-top: 34px;
+            height: 100%; }
+        }
+        
+        
+        .fa-heart {
+            cursor: pointer;
+            font-size: 2.2em;
+            padding-right: 38px;     
+        }
 
     .entré, .plats, .dessert {
         margin-bottom: 35px;
         .titr-1 {
+            
             margin-top: 0;
             margin-left: 20px;
             color: rgb(102, 102, 102);
@@ -365,14 +437,18 @@ a {
                     transform-origin: right 50%;
                     transition: transform 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000);  
                     transform: scalex(1); 
+                    &::before {
+                        display: block;
+                        animation: rotation 0.5s ease-in-out;
+                    }
                 }
                 
                 &.entr, &.plt, &.dsrt {
                     padding-right: 62px;
                     transition: 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000);
-                }                    
+                }
             }
-            
+                
 // --------------------------------------------------------------------------------------------------------
 
             // @Keyframes
@@ -387,6 +463,18 @@ a {
                     opacity: 1;
                 }
             }
+
+
+            @keyframes rotation {
+                0% {
+                    transform: rotate(0);
+                }
+
+                100% {
+                    transform: rotate(-360deg);
+                }
+                
+            }
             
 // -------------------------------------------------------------------------------------------------------
             
@@ -397,13 +485,15 @@ a {
                 position: absolute;
                 background-color: $color-tertiaire;
                 border-radius: 0 20px 20px 0;
-                padding-top: 28px;
+                padding-top: 27px;
                 padding-bottom: 26px;
                 padding-left: 19px;
                 padding-right: 20px;
                 top: 0;
                 right: 0;
-                transform: scalex(0);  }
+                transform: scalex(0); 
+                
+            }
                 
                 h3 {
                     padding-top: 16px;
@@ -412,22 +502,22 @@ a {
                     white-space: nowrap; 
                     overflow: hidden; }
                     
-                    p {
-                        margin-top: 8px;
-                        display: flex;
-                        justify-content: space-between;
-                        padding-right: 25px;
-                        padding-bottom: 13px;
-                        margin-bottom: 0; } 
+                p {
+                    margin-top: 8px;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 25px;
+                    padding-bottom: 13px;
+                    margin-bottom: 0; } 
                         
-                        .ellipsis {
-                            text-overflow: ellipsis;
-                white-space: nowrap; 
-                overflow: hidden;
-                display: block;
-                box-sizing: border-box; }     
-        }        
-    }
+                .ellipsis {
+                    text-overflow: ellipsis;
+                    white-space: nowrap; 
+                    overflow: hidden;
+                    display: block;
+                    box-sizing: border-box; }     
+            }        
+        }
 
     .boutton {
         width: 100%;
@@ -448,7 +538,17 @@ a {
         font-size: 1.2em;
         display: flex;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        transition: all 0.3s;
+        &:hover {
+            transform: scale(1.06);
+        }
+        
+        &:active {
+            transition: 0s;
+            transform: scale(1);
+        }
+    }
 }
 
 
@@ -524,7 +624,17 @@ form {
         height: 30px;
         border-radius: 20px;
         margin-top: 5px;
-        background-image: linear-gradient($color-secondary, $color-primary); }
+        background-image: linear-gradient($color-secondary, $color-primary);
+        transition: all 0.3s; 
+        &:hover {
+            transform: scale(1.06);
+        }
+        
+        &:active {
+            transition: 0s;
+            transform: scale(1);
+        }
+    }
 }
 
 // footer-email
@@ -709,7 +819,7 @@ form {
 
             .fa-heart {
                 width: 10%;
-                height: 21px; }
+                height: 100%; }
         }
 
         .entré, .plats, .dessert {
@@ -724,7 +834,12 @@ form {
                 .fa-check-circle {
                     font-size: 20px;
                     padding-top: 30px;
-                    padding-bottom: 27px; }
+                    padding-bottom: 27px;
+                    @media screen and (max-width: 680px) {
+
+                    }
+                
+                }
             }
         }
     } 
