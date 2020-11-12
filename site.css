@@ -527,6 +527,8 @@ a {
 }
 
 form {
+  margin: auto;
+  width: 70%;
   box-shadow: 0 1px 10px 0;
   background-color: #585858;
   border-radius: 20px;
