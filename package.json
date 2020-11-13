@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./main.scss:./site.css",
-    "prefix": "postcss ./site.css --use autoprefixer -d ./prefixed/"
+    "sass": "sass --watch scss/main.scss:css/site.css",
+    "prefix": "postcss css/site.css --use autoprefixer -d prefixed/"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,7 @@
   },
   "author": "Romain",
   "license": "ISC",
-  "browserslist" :"last 1 versions",
+  "browserslist" :"last 0 versions",
   "bugs": {
     "url": "https://github.com/Roms1512/LavaurRomain_2_02102020/issues"
   },

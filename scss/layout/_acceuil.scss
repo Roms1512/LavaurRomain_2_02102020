@@ -1,0 +1,78 @@
+/* acceuil */
+.acceuil {   
+    width: 100%;
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+    .localisation {
+        background-color: gainsboro;
+        display: flex;
+        justify-content: center;  
+        align-items: center;
+        border-top: 2px solid rgb(184, 184, 184);
+        cursor: pointer;
+
+        p { font-size: 1.2em; }
+
+        .fa-map-marker-alt {
+            height: 100%;
+            font-size: 1.3em;
+            padding-right: 30px; }
+    }
+
+    .description {
+        font-size: 1.5em;
+        margin-top: 50px;
+
+        br { display: none; }
+    }
+
+    button {
+        height: 60px;
+        margin-top: 30px;
+        margin-bottom: 70px;
+        border-radius: 30px;
+        box-shadow: 0px 1px 10px 0px;
+        border: none;
+        cursor: pointer;
+        background-image: linear-gradient($color-secondary, $color-primary);
+        color: #FFF;
+        font-size: 1.2em; 
+        transition: 0.3s;
+        &:hover {
+            transform: scale(1.06);
+        }
+        
+        &:active {
+            transition: 0s;
+            transform: scale(1);
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    /* acceuil */
+    .acceuil { 
+        .localisation {
+            p { font-size: 15px; }
+
+            .fa-map-marker-alt {
+                height: 16px;
+                padding-right: 17px; }
+        }
+
+        .description{
+            margin-top: 43px;
+            h1 { font-size: 23px; }
+
+            p { font-size: 18px; }
+
+            br { display: table; }
+        }
+
+        button {
+            padding-right: 22px;
+            padding-left: 22px;
+            font-size: 16px;
+            margin-bottom: 57px; }
+    }
+}

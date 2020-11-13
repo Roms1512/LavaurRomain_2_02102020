@@ -1,0 +1,53 @@
+/* logo */
+.header{
+    width: 100%;
+    display: flex;
+    background-color: #FFF;
+    img {
+        height: auto;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        margin: auto;  } 
+
+    .fleche {
+        text-align: left;
+        height: 100%;
+        font-size: 2.8em;
+        display: flex;
+        align-items: center;
+        margin-left: 23px;
+        transition: all 0.1s;
+        &:hover {
+            transform: scale(1.1);
+        }
+        
+        &:active {
+            transition: 0s;
+            transform: scale(1);
+        }
+    }
+}
+
+
+@media screen and (max-width: 680px) {
+    // logo
+    .header {
+        height: 63px;
+        display: flex;
+        align-items: center;
+        position: relative;
+ 
+        img {
+             height: 28px;
+             width: auto;
+             align-items: center;
+             padding-bottom: 0;
+             padding-top: 0; }
+ 
+        .fleche {
+             position: absolute;
+             top: 0;
+             left: 0;
+             font-size: 20px; }
+     }
+}

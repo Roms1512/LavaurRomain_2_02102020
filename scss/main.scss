@@ -1,0 +1,27 @@
+// scss/composants
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/keyframes";
+
+// --------------------------------------------------------------------------------------------
+
+// scss/layout
+@import "./layout/acceuil";
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/section";
+@import "./layout/footer";
+
+// --------------------------------------------------------------------------------------------
+
+// scss/pages
+@import "./pages/formulaire";
+@import "./pages/menu";
+
+// --------------------------------------------------------------------------------------------
+
+// scss/composants
+@import "./composants/body.scss";
+@import "./composants/icones.scss";
+@import "./composants/img.scss";
+@import "./composants/liens.scss";

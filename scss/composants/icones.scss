@@ -1,0 +1,17 @@
+.fa-heart {
+    transition: all 0.3s;
+    &:hover {
+        font-weight: bolder; 
+        transform: scale(1.1);
+        background: linear-gradient(45deg, $color-secondary, $color-primary);
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    &:active {
+        transform: scale(0.98);
+        transition: 0s;
+    }
+}

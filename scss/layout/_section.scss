@@ -1,0 +1,140 @@
+/* restorants */
+.sct-1 {    
+    background-color: rgb(240, 240, 240);
+    padding-top: 25px;
+    padding-bottom: 30px;
+    padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    h1 {
+        width: 100%;
+        padding-left: 15px;
+        padding-bottom: 5px; }
+
+    // restos
+    .resto-1 {
+        box-shadow: 0 1px 10px 0;
+        border-radius: 30px;
+        overflow: hidden;
+        padding-bottom: 0;
+        margin-left: 20px;
+        margin-right: 0;
+        margin-bottom: 18px;
+        width: 500px;
+        height: 280px;
+        position: relative;
+        transition: all 0.3s; 
+        &:hover {
+            transform: scale(1.06);
+            .img-1 {
+                animation-delay: 0.5s;
+                transition: 0.3s;
+                transform: scale(1.06);
+            }
+        }
+        
+        &:active {
+            transition: 0s;
+            transform: scale(1);
+        }
+
+        .img-1 { height: 174px; }
+
+        .nouveau-1, .nouveau-2 {
+            margin: 0;
+            position: absolute;
+            top: 13px;
+            right: 11px;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-tertiaire;
+            color: rgb(0, 100, 0);
+            height: 29px;
+            width: 81px; }
+
+        .txt-1 {
+            height: auto;
+            padding-left: 10px;
+            .txt {
+                display: flex;
+                height: 20px;
+                justify-content: space-between;
+                padding-right: 20px;
+                align-items: center; }
+
+            h2 { margin-top: 15px; }
+
+            .fa-heart {
+                font-size: 2.2em;
+                padding-bottom: 50px; }
+        }           
+    }
+}
+
+
+@media screen and (max-width: 680px) {
+    // restorants
+    .sct-1 {
+        padding: 0;
+        padding-bottom: 34px;
+        h1 {
+            margin-top: 58px;
+            margin-bottom: 27px;
+            font-size: 18px;
+            padding-left: 21px;
+            padding-bottom: 0; }
+        
+        // restos 
+        .resto-1 {
+            width: 89.5%;
+            padding-bottom: 0;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 18px;
+            height: 251px;
+            position: relative;
+
+            .img-1 { height: 174px; }
+
+            .nouveau-1, .nouveau-2 {
+                margin: 0;
+                position: absolute;
+                top: 13px;
+                right: 11px;
+                border-radius: 3px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $color-tertiaire;
+                color: rgb(0, 100, 0);
+                height: 29px;
+                width: 81px; }
+
+            .txt-1 {
+                padding-left: 0;
+                height: 77px;
+                h2 {
+                    font-size: 18px;
+                    margin-bottom: 7px;
+                    padding-left: 14px; }
+
+                .txt {
+                    padding-bottom: 20px;
+                    p {
+                        padding-left: 14px;
+                        font-size: 13px;
+                        margin-top: 7px; }
+
+                    i {
+                        height: 21px;
+                        right: 24px;
+                        bottom: 33px;
+                    }
+                }
+            }
+        }
+    } 
+}

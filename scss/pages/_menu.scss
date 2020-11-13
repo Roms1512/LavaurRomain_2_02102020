@@ -1,0 +1,221 @@
+/* Menus */
+.img-1 {
+    position: relative;
+    width: 100%;
+    height: 460px; }
+
+.menu {
+    position: relative;
+    top: -30px;
+    width: 100%;
+    margin-bottom: 0px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 38px 38px 0 0;
+    .menu-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+            font-family: Shrikhand;
+            font-size: 2em;
+            padding-left: 20px;
+            margin-top: 34px;
+            height: 100%; }
+        }
+        
+        
+        .fa-heart {
+            cursor: pointer;
+            font-size: 2.2em;
+            padding-right: 38px;     
+        }
+
+    .entré, .plats, .dessert {
+        margin-bottom: 35px;
+        .titr-1 {
+            
+            margin-top: 0;
+            margin-left: 20px;
+            color: rgb(102, 102, 102);
+            border-bottom: 3px solid $color-tertiaire;
+            padding-bottom: 9px;
+            width: 60px;
+            font-size: 1.45em; }
+
+        .entr, .plt, .dsrt {
+            position: relative;
+            background-color: #FFF;
+            border-radius: 20px;
+            box-shadow: 0 1px 10px 0;
+            padding-left: 10px;
+            margin-right: 12px;
+            margin-left: 14px;
+            cursor: pointer;
+            
+            // animation
+            &.entr {
+                animation: transition 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+                &__1 { animation-delay: 0s; }
+
+                &__2 { animation-delay: 0.2s; }
+
+                &__3 { animation-delay: 0.4s; } 
+                
+                &__4 { animation-delay: 0.6s; }
+            }
+            
+            &.plt {
+                animation: transition 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+                animation-delay: 0.6s;
+                &__1 { animation-delay: 0.8s; }
+
+                &__2 { animation-delay: 1s; }
+
+                &__3 { animation-delay: 1.2s; }
+            }
+
+            &.dsrt {
+                animation: transition 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+                animation-delay: 1s;
+                &__1 { animation-delay: 1.6s; }
+
+                &__2 { animation-delay: 1.8s; }
+
+                &__3 { animation-delay: 2s; }
+            }
+            
+            &:hover {
+                & > .fa-check-circle{                        
+                    transform-origin: right 50%;
+                    transition: transform 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000);  
+                    transform: scalex(1); 
+                    &::before {
+                        display: block;
+                        animation: rotation 0.5s ease-in-out;
+                    }
+                }
+                
+                &.entr, &.plt, &.dsrt {
+                    padding-right: 62px;
+                    transition: 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+                }
+            }
+                
+// --------------------------------------------------------------------------------------------------------
+
+            
+            
+// -------------------------------------------------------------------------------------------------------
+            
+            // animation
+            .fa-check-circle {
+                color: #FFF;
+                font-size: 1.5em;
+                position: absolute;
+                background-color: $color-tertiaire;
+                border-radius: 0 20px 20px 0;
+                padding-top: 27px;
+                padding-bottom: 26px;
+                padding-left: 19px;
+                padding-right: 20px;
+                top: 0;
+                right: 0;
+                transform: scalex(0); 
+                
+            }
+                
+                h3 {
+                    padding-top: 16px;
+                    margin-bottom: 0;
+                    text-overflow: ellipsis;
+                    white-space: nowrap; 
+                    overflow: hidden; }
+                    
+                p {
+                    margin-top: 8px;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 25px;
+                    padding-bottom: 13px;
+                    margin-bottom: 0; } 
+                        
+                .ellipsis {
+                    text-overflow: ellipsis;
+                    white-space: nowrap; 
+                    overflow: hidden;
+                    display: block;
+                    box-sizing: border-box; }     
+            }        
+        }
+
+    .boutton {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+
+    button {
+        height: 60px;
+        width: 270px;
+        margin-bottom: 83px;
+        margin-top: 15px;
+        border-radius: 30px;
+        box-shadow: 0 1px 10px 0;
+        border: none;
+        cursor: pointer;
+        background-image: linear-gradient($color-secondary, $color-primary);
+        color: #FFF;
+        font-size: 1.2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+        &:hover {
+            transform: scale(1.06);
+        }
+        
+        &:active {
+            transition: 0s;
+            transform: scale(1);
+        }
+    }
+}
+
+
+@media screen and (max-width: 680px) {
+    // menus
+    .img-1 {
+        height: 280px;
+    }
+
+    .menu {
+        top: -60px;
+        .menu-1 {
+            h1 { width: 90%; }
+
+            .fa-heart {
+                width: 10%;
+                height: 100%; }
+        }
+
+        .entré, .plats, .dessert {
+            .titr-1 {
+                font-size: 15px;
+                width: 40px;
+                padding-bottom: 8px; }
+
+            .entr, .plt, .dsrt {
+                h3 { font-size: 18px; }
+
+                .fa-check-circle {
+                    font-size: 20px;
+                    padding-top: 30px;
+                    padding-bottom: 27px;
+                    @media screen and (max-width: 680px) {
+
+                    }
+                
+                }
+            }
+        }
+    } 
+}
