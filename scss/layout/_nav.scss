@@ -7,14 +7,14 @@
     padding-bottom: 60px;
     background-color: #FFF;
     padding-left: 15px;
-    h1 {
+    h2 {
         width: 100%; }
 
     .fonct{
         display: flex;
         position: relative;
         justify-content: flex-start ;        
-        .n° {
+        .num {
             position: absolute;
             left: 20px;
             top: 20px;
@@ -87,14 +87,14 @@
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: flex-start;
-        h1 {
+        h2 {
             font-size: 19px;
             margin-bottom: 31px; }
 
         .fonct {
             position: relative;
             width: 100%;
-            .n° {
+            .num {
                 position: absolute;
                 left: 5px;
                 top: 26px;

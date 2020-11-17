@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @keyframes transition {
   0% {
     transform: translateY(50px);
@@ -17,6 +16,61 @@
     transform: rotate(-360deg);
   }
 }
+.menu .entre .entr.entr, .menu .entre .plt.entr, .menu .entre .dsrt.entr, .menu .plats .entr.entr, .menu .plats .plt.entr, .menu .plats .dsrt.entr, .menu .dessert .entr.entr, .menu .dessert .plt.entr, .menu .dessert .dsrt.entr {
+  animation: transition 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s both;
+}
+.menu .entre .entr.entr__1, .menu .entre .plt.entr__1, .menu .entre .dsrt.entr__1, .menu .plats .entr.entr__1, .menu .plats .plt.entr__1, .menu .plats .dsrt.entr__1, .menu .dessert .entr.entr__1, .menu .dessert .plt.entr__1, .menu .dessert .dsrt.entr__1 {
+  animation-delay: 0s;
+}
+.menu .entre .entr.entr__2, .menu .entre .plt.entr__2, .menu .entre .dsrt.entr__2, .menu .plats .entr.entr__2, .menu .plats .plt.entr__2, .menu .plats .dsrt.entr__2, .menu .dessert .entr.entr__2, .menu .dessert .plt.entr__2, .menu .dessert .dsrt.entr__2 {
+  animation-delay: 0.2s;
+}
+.menu .entre .entr.entr__3, .menu .entre .plt.entr__3, .menu .entre .dsrt.entr__3, .menu .plats .entr.entr__3, .menu .plats .plt.entr__3, .menu .plats .dsrt.entr__3, .menu .dessert .entr.entr__3, .menu .dessert .plt.entr__3, .menu .dessert .dsrt.entr__3 {
+  animation-delay: 0.4s;
+}
+.menu .entre .entr.entr__4, .menu .entre .plt.entr__4, .menu .entre .dsrt.entr__4, .menu .plats .entr.entr__4, .menu .plats .plt.entr__4, .menu .plats .dsrt.entr__4, .menu .dessert .entr.entr__4, .menu .dessert .plt.entr__4, .menu .dessert .dsrt.entr__4 {
+  animation-delay: 0.6s;
+}
+.menu .entre .entr.plt, .menu .entre .plt.plt, .menu .entre .dsrt.plt, .menu .plats .entr.plt, .menu .plats .plt.plt, .menu .plats .dsrt.plt, .menu .dessert .entr.plt, .menu .dessert .plt.plt, .menu .dessert .dsrt.plt {
+  animation: transition 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s both;
+  animation-delay: 0.6s;
+}
+.menu .entre .entr.plt__1, .menu .entre .plt.plt__1, .menu .entre .dsrt.plt__1, .menu .plats .entr.plt__1, .menu .plats .plt.plt__1, .menu .plats .dsrt.plt__1, .menu .dessert .entr.plt__1, .menu .dessert .plt.plt__1, .menu .dessert .dsrt.plt__1 {
+  animation-delay: 0.8s;
+}
+.menu .entre .entr.plt__2, .menu .entre .plt.plt__2, .menu .entre .dsrt.plt__2, .menu .plats .entr.plt__2, .menu .plats .plt.plt__2, .menu .plats .dsrt.plt__2, .menu .dessert .entr.plt__2, .menu .dessert .plt.plt__2, .menu .dessert .dsrt.plt__2 {
+  animation-delay: 1s;
+}
+.menu .entre .entr.plt__3, .menu .entre .plt.plt__3, .menu .entre .dsrt.plt__3, .menu .plats .entr.plt__3, .menu .plats .plt.plt__3, .menu .plats .dsrt.plt__3, .menu .dessert .entr.plt__3, .menu .dessert .plt.plt__3, .menu .dessert .dsrt.plt__3 {
+  animation-delay: 1.2s;
+}
+.menu .entre .entr.dsrt, .menu .entre .plt.dsrt, .menu .entre .dsrt.dsrt, .menu .plats .entr.dsrt, .menu .plats .plt.dsrt, .menu .plats .dsrt.dsrt, .menu .dessert .entr.dsrt, .menu .dessert .plt.dsrt, .menu .dessert .dsrt.dsrt {
+  animation: transition 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s both;
+  animation-delay: 1s;
+}
+.menu .entre .entr.dsrt__1, .menu .entre .plt.dsrt__1, .menu .entre .dsrt.dsrt__1, .menu .plats .entr.dsrt__1, .menu .plats .plt.dsrt__1, .menu .plats .dsrt.dsrt__1, .menu .dessert .entr.dsrt__1, .menu .dessert .plt.dsrt__1, .menu .dessert .dsrt.dsrt__1 {
+  animation-delay: 1.6s;
+}
+.menu .entre .entr.dsrt__2, .menu .entre .plt.dsrt__2, .menu .entre .dsrt.dsrt__2, .menu .plats .entr.dsrt__2, .menu .plats .plt.dsrt__2, .menu .plats .dsrt.dsrt__2, .menu .dessert .entr.dsrt__2, .menu .dessert .plt.dsrt__2, .menu .dessert .dsrt.dsrt__2 {
+  animation-delay: 1.8s;
+}
+.menu .entre .entr.dsrt__3, .menu .entre .plt.dsrt__3, .menu .entre .dsrt.dsrt__3, .menu .plats .entr.dsrt__3, .menu .plats .plt.dsrt__3, .menu .plats .dsrt.dsrt__3, .menu .dessert .entr.dsrt__3, .menu .dessert .plt.dsrt__3, .menu .dessert .dsrt.dsrt__3 {
+  animation-delay: 2s;
+}
+.menu .entre .entr:hover > .fa-check-circle, .menu .entre .plt:hover > .fa-check-circle, .menu .entre .dsrt:hover > .fa-check-circle, .menu .plats .entr:hover > .fa-check-circle, .menu .plats .plt:hover > .fa-check-circle, .menu .plats .dsrt:hover > .fa-check-circle, .menu .dessert .entr:hover > .fa-check-circle, .menu .dessert .plt:hover > .fa-check-circle, .menu .dessert .dsrt:hover > .fa-check-circle {
+  transform-origin: right 50%;
+  transition: transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transform: scalex(1);
+}
+.menu .entre .entr:hover > .fa-check-circle::before, .menu .entre .plt:hover > .fa-check-circle::before, .menu .entre .dsrt:hover > .fa-check-circle::before, .menu .plats .entr:hover > .fa-check-circle::before, .menu .plats .plt:hover > .fa-check-circle::before, .menu .plats .dsrt:hover > .fa-check-circle::before, .menu .dessert .entr:hover > .fa-check-circle::before, .menu .dessert .plt:hover > .fa-check-circle::before, .menu .dessert .dsrt:hover > .fa-check-circle::before {
+  display: block;
+  animation: rotation 0.5s ease-in-out;
+}
+.menu .entre .entr:hover.entr, .menu .entre .entr:hover.plt, .menu .entre .entr:hover.dsrt, .menu .entre .plt:hover.entr, .menu .entre .plt:hover.plt, .menu .entre .plt:hover.dsrt, .menu .entre .dsrt:hover.entr, .menu .entre .dsrt:hover.plt, .menu .entre .dsrt:hover.dsrt, .menu .plats .entr:hover.entr, .menu .plats .entr:hover.plt, .menu .plats .entr:hover.dsrt, .menu .plats .plt:hover.entr, .menu .plats .plt:hover.plt, .menu .plats .plt:hover.dsrt, .menu .plats .dsrt:hover.entr, .menu .plats .dsrt:hover.plt, .menu .plats .dsrt:hover.dsrt, .menu .dessert .entr:hover.entr, .menu .dessert .entr:hover.plt, .menu .dessert .entr:hover.dsrt, .menu .dessert .plt:hover.entr, .menu .dessert .plt:hover.plt, .menu .dessert .plt:hover.dsrt, .menu .dessert .dsrt:hover.entr, .menu .dessert .dsrt:hover.plt, .menu .dessert .dsrt:hover.dsrt {
+  padding-right: 62px;
+  transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
 /* acceuil */
 .acceuil {
   width: 100%;
@@ -41,28 +95,37 @@
 }
 .acceuil .description {
   font-size: 1.5em;
-  margin-top: 50px;
 }
 .acceuil .description br {
   display: none;
 }
-.acceuil button {
-  height: 60px;
-  margin-top: 30px;
-  margin-bottom: 70px;
+.acceuil .buttons {
+  padding-top: 30px;
+  padding-bottom: 90px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 250px;
+  margin: auto;
+  transition: 0.3s;
+}
+.acceuil .buttons .button {
+  height: 30px;
+  position: relative;
+  padding-right: 22px;
+  padding-left: 22px;
+  padding: 20px;
   border-radius: 30px;
-  box-shadow: 0px 1px 10px 0px;
   border: none;
+  box-shadow: 0px 1px 10px 0px;
   cursor: pointer;
   background-image: linear-gradient(#FF79DA, #9356DC);
   color: #FFF;
   font-size: 1.2em;
-  transition: 0.3s;
 }
-.acceuil button:hover {
+.acceuil .buttons:hover {
   transform: scale(1.06);
 }
-.acceuil button:active {
+.acceuil .buttons:active {
   transition: 0s;
   transform: scale(1);
 }
@@ -88,9 +151,10 @@
   .acceuil .description br {
     display: table;
   }
-  .acceuil button {
-    padding-right: 22px;
-    padding-left: 22px;
+  .acceuil .buttons {
+    width: 218px;
+  }
+  .acceuil .buttons .button {
     font-size: 16px;
     margin-bottom: 57px;
   }
@@ -155,7 +219,7 @@
   background-color: #FFF;
   padding-left: 15px;
 }
-.nav h1 {
+.nav h2 {
   width: 100%;
 }
 .nav .fonct {
@@ -163,7 +227,7 @@
   position: relative;
   justify-content: flex-start;
 }
-.nav .fonct .n° {
+.nav .fonct .num {
   position: absolute;
   left: 20px;
   top: 20px;
@@ -238,7 +302,7 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  .nav h1 {
+  .nav h2 {
     font-size: 19px;
     margin-bottom: 31px;
   }
@@ -246,7 +310,7 @@
     position: relative;
     width: 100%;
   }
-  .nav .fonct .n° {
+  .nav .fonct .num {
     position: absolute;
     left: 5px;
     top: 26px;
@@ -596,10 +660,10 @@ form button:active {
   font-size: 2.2em;
   padding-right: 38px;
 }
-.menu .entré, .menu .plats, .menu .dessert {
+.menu .entre, .menu .plats, .menu .dessert {
   margin-bottom: 35px;
 }
-.menu .entré .titr-1, .menu .plats .titr-1, .menu .dessert .titr-1 {
+.menu .entre .titr-1, .menu .plats .titr-1, .menu .dessert .titr-1 {
   margin-top: 0;
   margin-left: 20px;
   color: #666666;
@@ -608,7 +672,7 @@ form button:active {
   width: 60px;
   font-size: 1.45em;
 }
-.menu .entré .entr, .menu .entré .plt, .menu .entré .dsrt, .menu .plats .entr, .menu .plats .plt, .menu .plats .dsrt, .menu .dessert .entr, .menu .dessert .plt, .menu .dessert .dsrt {
+.menu .entre .entr, .menu .entre .plt, .menu .entre .dsrt, .menu .plats .entr, .menu .plats .plt, .menu .plats .dsrt, .menu .dessert .entr, .menu .dessert .plt, .menu .dessert .dsrt {
   position: relative;
   background-color: #FFF;
   border-radius: 20px;
@@ -618,61 +682,7 @@ form button:active {
   margin-left: 14px;
   cursor: pointer;
 }
-.menu .entré .entr.entr, .menu .entré .plt.entr, .menu .entré .dsrt.entr, .menu .plats .entr.entr, .menu .plats .plt.entr, .menu .plats .dsrt.entr, .menu .dessert .entr.entr, .menu .dessert .plt.entr, .menu .dessert .dsrt.entr {
-  animation: transition 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s both;
-}
-.menu .entré .entr.entr__1, .menu .entré .plt.entr__1, .menu .entré .dsrt.entr__1, .menu .plats .entr.entr__1, .menu .plats .plt.entr__1, .menu .plats .dsrt.entr__1, .menu .dessert .entr.entr__1, .menu .dessert .plt.entr__1, .menu .dessert .dsrt.entr__1 {
-  animation-delay: 0s;
-}
-.menu .entré .entr.entr__2, .menu .entré .plt.entr__2, .menu .entré .dsrt.entr__2, .menu .plats .entr.entr__2, .menu .plats .plt.entr__2, .menu .plats .dsrt.entr__2, .menu .dessert .entr.entr__2, .menu .dessert .plt.entr__2, .menu .dessert .dsrt.entr__2 {
-  animation-delay: 0.2s;
-}
-.menu .entré .entr.entr__3, .menu .entré .plt.entr__3, .menu .entré .dsrt.entr__3, .menu .plats .entr.entr__3, .menu .plats .plt.entr__3, .menu .plats .dsrt.entr__3, .menu .dessert .entr.entr__3, .menu .dessert .plt.entr__3, .menu .dessert .dsrt.entr__3 {
-  animation-delay: 0.4s;
-}
-.menu .entré .entr.entr__4, .menu .entré .plt.entr__4, .menu .entré .dsrt.entr__4, .menu .plats .entr.entr__4, .menu .plats .plt.entr__4, .menu .plats .dsrt.entr__4, .menu .dessert .entr.entr__4, .menu .dessert .plt.entr__4, .menu .dessert .dsrt.entr__4 {
-  animation-delay: 0.6s;
-}
-.menu .entré .entr.plt, .menu .entré .plt.plt, .menu .entré .dsrt.plt, .menu .plats .entr.plt, .menu .plats .plt.plt, .menu .plats .dsrt.plt, .menu .dessert .entr.plt, .menu .dessert .plt.plt, .menu .dessert .dsrt.plt {
-  animation: transition 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s both;
-  animation-delay: 0.6s;
-}
-.menu .entré .entr.plt__1, .menu .entré .plt.plt__1, .menu .entré .dsrt.plt__1, .menu .plats .entr.plt__1, .menu .plats .plt.plt__1, .menu .plats .dsrt.plt__1, .menu .dessert .entr.plt__1, .menu .dessert .plt.plt__1, .menu .dessert .dsrt.plt__1 {
-  animation-delay: 0.8s;
-}
-.menu .entré .entr.plt__2, .menu .entré .plt.plt__2, .menu .entré .dsrt.plt__2, .menu .plats .entr.plt__2, .menu .plats .plt.plt__2, .menu .plats .dsrt.plt__2, .menu .dessert .entr.plt__2, .menu .dessert .plt.plt__2, .menu .dessert .dsrt.plt__2 {
-  animation-delay: 1s;
-}
-.menu .entré .entr.plt__3, .menu .entré .plt.plt__3, .menu .entré .dsrt.plt__3, .menu .plats .entr.plt__3, .menu .plats .plt.plt__3, .menu .plats .dsrt.plt__3, .menu .dessert .entr.plt__3, .menu .dessert .plt.plt__3, .menu .dessert .dsrt.plt__3 {
-  animation-delay: 1.2s;
-}
-.menu .entré .entr.dsrt, .menu .entré .plt.dsrt, .menu .entré .dsrt.dsrt, .menu .plats .entr.dsrt, .menu .plats .plt.dsrt, .menu .plats .dsrt.dsrt, .menu .dessert .entr.dsrt, .menu .dessert .plt.dsrt, .menu .dessert .dsrt.dsrt {
-  animation: transition 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s both;
-  animation-delay: 1s;
-}
-.menu .entré .entr.dsrt__1, .menu .entré .plt.dsrt__1, .menu .entré .dsrt.dsrt__1, .menu .plats .entr.dsrt__1, .menu .plats .plt.dsrt__1, .menu .plats .dsrt.dsrt__1, .menu .dessert .entr.dsrt__1, .menu .dessert .plt.dsrt__1, .menu .dessert .dsrt.dsrt__1 {
-  animation-delay: 1.6s;
-}
-.menu .entré .entr.dsrt__2, .menu .entré .plt.dsrt__2, .menu .entré .dsrt.dsrt__2, .menu .plats .entr.dsrt__2, .menu .plats .plt.dsrt__2, .menu .plats .dsrt.dsrt__2, .menu .dessert .entr.dsrt__2, .menu .dessert .plt.dsrt__2, .menu .dessert .dsrt.dsrt__2 {
-  animation-delay: 1.8s;
-}
-.menu .entré .entr.dsrt__3, .menu .entré .plt.dsrt__3, .menu .entré .dsrt.dsrt__3, .menu .plats .entr.dsrt__3, .menu .plats .plt.dsrt__3, .menu .plats .dsrt.dsrt__3, .menu .dessert .entr.dsrt__3, .menu .dessert .plt.dsrt__3, .menu .dessert .dsrt.dsrt__3 {
-  animation-delay: 2s;
-}
-.menu .entré .entr:hover > .fa-check-circle, .menu .entré .plt:hover > .fa-check-circle, .menu .entré .dsrt:hover > .fa-check-circle, .menu .plats .entr:hover > .fa-check-circle, .menu .plats .plt:hover > .fa-check-circle, .menu .plats .dsrt:hover > .fa-check-circle, .menu .dessert .entr:hover > .fa-check-circle, .menu .dessert .plt:hover > .fa-check-circle, .menu .dessert .dsrt:hover > .fa-check-circle {
-  transform-origin: right 50%;
-  transition: transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
-  transform: scalex(1);
-}
-.menu .entré .entr:hover > .fa-check-circle::before, .menu .entré .plt:hover > .fa-check-circle::before, .menu .entré .dsrt:hover > .fa-check-circle::before, .menu .plats .entr:hover > .fa-check-circle::before, .menu .plats .plt:hover > .fa-check-circle::before, .menu .plats .dsrt:hover > .fa-check-circle::before, .menu .dessert .entr:hover > .fa-check-circle::before, .menu .dessert .plt:hover > .fa-check-circle::before, .menu .dessert .dsrt:hover > .fa-check-circle::before {
-  display: block;
-  animation: rotation 0.5s ease-in-out;
-}
-.menu .entré .entr:hover.entr, .menu .entré .entr:hover.plt, .menu .entré .entr:hover.dsrt, .menu .entré .plt:hover.entr, .menu .entré .plt:hover.plt, .menu .entré .plt:hover.dsrt, .menu .entré .dsrt:hover.entr, .menu .entré .dsrt:hover.plt, .menu .entré .dsrt:hover.dsrt, .menu .plats .entr:hover.entr, .menu .plats .entr:hover.plt, .menu .plats .entr:hover.dsrt, .menu .plats .plt:hover.entr, .menu .plats .plt:hover.plt, .menu .plats .plt:hover.dsrt, .menu .plats .dsrt:hover.entr, .menu .plats .dsrt:hover.plt, .menu .plats .dsrt:hover.dsrt, .menu .dessert .entr:hover.entr, .menu .dessert .entr:hover.plt, .menu .dessert .entr:hover.dsrt, .menu .dessert .plt:hover.entr, .menu .dessert .plt:hover.plt, .menu .dessert .plt:hover.dsrt, .menu .dessert .dsrt:hover.entr, .menu .dessert .dsrt:hover.plt, .menu .dessert .dsrt:hover.dsrt {
-  padding-right: 62px;
-  transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
-}
-.menu .entré .entr .fa-check-circle, .menu .entré .plt .fa-check-circle, .menu .entré .dsrt .fa-check-circle, .menu .plats .entr .fa-check-circle, .menu .plats .plt .fa-check-circle, .menu .plats .dsrt .fa-check-circle, .menu .dessert .entr .fa-check-circle, .menu .dessert .plt .fa-check-circle, .menu .dessert .dsrt .fa-check-circle {
+.menu .entre .entr .fa-check-circle, .menu .entre .plt .fa-check-circle, .menu .entre .dsrt .fa-check-circle, .menu .plats .entr .fa-check-circle, .menu .plats .plt .fa-check-circle, .menu .plats .dsrt .fa-check-circle, .menu .dessert .entr .fa-check-circle, .menu .dessert .plt .fa-check-circle, .menu .dessert .dsrt .fa-check-circle {
   color: #FFF;
   font-size: 1.5em;
   position: absolute;
@@ -686,14 +696,14 @@ form button:active {
   right: 0;
   transform: scalex(0);
 }
-.menu .entré .entr h3, .menu .entré .plt h3, .menu .entré .dsrt h3, .menu .plats .entr h3, .menu .plats .plt h3, .menu .plats .dsrt h3, .menu .dessert .entr h3, .menu .dessert .plt h3, .menu .dessert .dsrt h3 {
+.menu .entre .entr h3, .menu .entre .plt h3, .menu .entre .dsrt h3, .menu .plats .entr h3, .menu .plats .plt h3, .menu .plats .dsrt h3, .menu .dessert .entr h3, .menu .dessert .plt h3, .menu .dessert .dsrt h3 {
   padding-top: 16px;
   margin-bottom: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-.menu .entré .entr p, .menu .entré .plt p, .menu .entré .dsrt p, .menu .plats .entr p, .menu .plats .plt p, .menu .plats .dsrt p, .menu .dessert .entr p, .menu .dessert .plt p, .menu .dessert .dsrt p {
+.menu .entre .entr p, .menu .entre .plt p, .menu .entre .dsrt p, .menu .plats .entr p, .menu .plats .plt p, .menu .plats .dsrt p, .menu .dessert .entr p, .menu .dessert .plt p, .menu .dessert .dsrt p {
   margin-top: 8px;
   display: flex;
   justify-content: space-between;
@@ -701,7 +711,7 @@ form button:active {
   padding-bottom: 13px;
   margin-bottom: 0;
 }
-.menu .entré .entr .ellipsis, .menu .entré .plt .ellipsis, .menu .entré .dsrt .ellipsis, .menu .plats .entr .ellipsis, .menu .plats .plt .ellipsis, .menu .plats .dsrt .ellipsis, .menu .dessert .entr .ellipsis, .menu .dessert .plt .ellipsis, .menu .dessert .dsrt .ellipsis {
+.menu .entre .entr .ellipsis, .menu .entre .plt .ellipsis, .menu .entre .dsrt .ellipsis, .menu .plats .entr .ellipsis, .menu .plats .plt .ellipsis, .menu .plats .dsrt .ellipsis, .menu .dessert .entr .ellipsis, .menu .dessert .plt .ellipsis, .menu .dessert .dsrt .ellipsis {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -753,15 +763,15 @@ form button:active {
     width: 10%;
     height: 100%;
   }
-  .menu .entré .titr-1, .menu .plats .titr-1, .menu .dessert .titr-1 {
+  .menu .entre .titr-1, .menu .plats .titr-1, .menu .dessert .titr-1 {
     font-size: 15px;
     width: 40px;
     padding-bottom: 8px;
   }
-  .menu .entré .entr h3, .menu .entré .plt h3, .menu .entré .dsrt h3, .menu .plats .entr h3, .menu .plats .plt h3, .menu .plats .dsrt h3, .menu .dessert .entr h3, .menu .dessert .plt h3, .menu .dessert .dsrt h3 {
+  .menu .entre .entr h3, .menu .entre .plt h3, .menu .entre .dsrt h3, .menu .plats .entr h3, .menu .plats .plt h3, .menu .plats .dsrt h3, .menu .dessert .entr h3, .menu .dessert .plt h3, .menu .dessert .dsrt h3 {
     font-size: 18px;
   }
-  .menu .entré .entr .fa-check-circle, .menu .entré .plt .fa-check-circle, .menu .entré .dsrt .fa-check-circle, .menu .plats .entr .fa-check-circle, .menu .plats .plt .fa-check-circle, .menu .plats .dsrt .fa-check-circle, .menu .dessert .entr .fa-check-circle, .menu .dessert .plt .fa-check-circle, .menu .dessert .dsrt .fa-check-circle {
+  .menu .entre .entr .fa-check-circle, .menu .entre .plt .fa-check-circle, .menu .entre .dsrt .fa-check-circle, .menu .plats .entr .fa-check-circle, .menu .plats .plt .fa-check-circle, .menu .plats .dsrt .fa-check-circle, .menu .dessert .entr .fa-check-circle, .menu .dessert .plt .fa-check-circle, .menu .dessert .dsrt .fa-check-circle {
     font-size: 20px;
     padding-top: 30px;
     padding-bottom: 27px;
@@ -781,7 +791,6 @@ body {
   font-weight: bolder;
   transform: scale(1.1);
   background: linear-gradient(45deg, #FF79DA, #9356DC);
-  background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
