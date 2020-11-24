@@ -1,5 +1,5 @@
 /* logo */
-.header{
+.header, .header-menu, .header-form{
     width: 100%;
     display: flex;
     background-color: #FFF;
@@ -32,6 +32,11 @@
 @media screen and (max-width: 680px) {
     // logo
     .header {
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+    
+    .header, .header-form, .header-menu {
         height: 63px;
         display: flex;
         align-items: center;
